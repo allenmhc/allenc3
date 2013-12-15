@@ -1,4 +1,3 @@
-
 <?php
 /* Base index file. */
 define('WP_USE_THEMES', false);

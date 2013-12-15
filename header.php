@@ -9,10 +9,10 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>" />
   <title><?php wp_title(); ?></title>
+
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/foundation/foundation.min.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/styles/lib.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/styles/index.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/styles/zocial.css" type="text/css" media="screen" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS" href="<?php bloginfo('rss2_url'); ?>" />
   <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.png" />
