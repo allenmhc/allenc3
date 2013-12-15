@@ -1,0 +1,29 @@
+#site-header {
+  background-color: rgba($color-prim, 0.5);
+  border-bottom: 1px solid black(0.5);
+}
+
+#site-title {
+  font-family: $font-header;
+
+  .name, .description {
+    font-size: 28px;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  .name {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black(1);
+  }
+  .description {
+    font-weight: 100;
+    color: black(0.4);
+  }
+}
+
+#site-title-link {
+  text-decoration: none;
+}

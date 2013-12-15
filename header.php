@@ -5,9 +5,11 @@
  */
 ?><!DOCTYPE html>
 
-<html <?php language_attributes(); ?>>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo('charset'); ?>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php wp_title(); ?></title>
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
@@ -26,4 +28,16 @@
   <?php wp_head(); ?>
 </head>
 <body>
+
+  <header id="site-header" class="row">
+    <div class="small-centered column">
+      <a id="site-title-link" href="<?php echo get_home_url(); ?>">
+        <hgroup id="site-title">
+          <h1 class="name"><?php bloginfo("name"); ?></h1>
+          <h3 class="description"><?php bloginfo("description"); ?></h3>
+        </hgroup>
+      </a>
+    </div>
+  </header>
+
   <div id="content">

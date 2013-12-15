@@ -5,3 +5,37 @@
  * Version: 3.0
  *
  * This is the allenc 3.0 theme. */
+/* line 1, ../scss/section/_header.scss */
+#site-header {
+  background-color: rgba(79, 108, 136, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* line 6, ../scss/section/_header.scss */
+#site-title {
+  font-family: "Lato", Arial, sans-serif;
+}
+/* line 9, ../scss/section/_header.scss */
+#site-title .name, #site-title .description {
+  font-size: 28px;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+/* line 16, ../scss/section/_header.scss */
+#site-title .name {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+}
+/* line 21, ../scss/section/_header.scss */
+#site-title .description {
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 27, ../scss/section/_header.scss */
+#site-title-link {
+  text-decoration: none;
+}
