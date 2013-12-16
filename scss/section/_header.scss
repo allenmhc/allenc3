@@ -1,26 +1,35 @@
 #site-header {
-  background-color: rgba($color-prim, 0.5);
+  background-color: rgba($color-prim, 0.4);
   border-bottom: 1px solid black(0.5);
+  padding: 10px 0 15px;
 }
 
+$color-title: lighten(black, 20%);
 #site-title {
   font-family: $font-header;
 
   .name, .description {
-    font-size: 28px;
-    letter-spacing: 5px;
     margin: 0;
     padding: 0;
-    display: inline-block;
   }
   .name {
-    font-weight: 400;
-    text-transform: uppercase;
-    color: black(1);
+    font-size: 28px;
+    letter-spacing: 3px;
+    .domain {
+      color: $color-title;
+      font-weight: 400;
+    }
+    .tld {
+      color: lighten($color-title, 30%);
+      font-weight: 100;
+    }
   }
   .description {
-    font-weight: 100;
-    color: black(0.4);
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: lighten($color-title, 20%);
+    letter-spacing: 2px;
   }
 }
 
