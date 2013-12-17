@@ -6,14 +6,11 @@
 
 $color-title: lighten(black, 20%);
 #site-title {
-  font-family: $font-header;
-
   .name, .description {
     margin: 0;
     padding: 0;
   }
   .name {
-    font-size: 28px;
     letter-spacing: 3px;
     .domain {
       color: $color-title;
@@ -26,7 +23,6 @@ $color-title: lighten(black, 20%);
   }
   .description {
     font-weight: 400;
-    font-size: 12px;
     text-transform: uppercase;
     color: lighten($color-title, 20%);
     letter-spacing: 2px;

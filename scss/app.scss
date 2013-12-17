@@ -1,8 +1,9 @@
-@import "settings";
-@import "foundation";
-@import "lib/zocial";
+@import
+  "base/config",
+  "base/mixins",
+  "lib/zocial",
 
-@import "base/config";
-@import "base/mixins";
+  "settings",
+  "foundation",
 
-@import "section/header";
+  "section/header";
