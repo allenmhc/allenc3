@@ -9,7 +9,7 @@ global $wp_query;
 ?>
 
 <div id="alpha" class="medium-7 large-8 column">
-  <section class="articles">
+  <section class="articles row">
     <ul class="posts-list articles-list clearfix no-bullet">
       <?php
       rewind_posts();
@@ -25,7 +25,7 @@ global $wp_query;
       <li class="post-box-outer <?php echo "post-box-${i}"; ?>">
         <a href="<?php the_permalink(); ?>" class="post-box article-box">
           <div class="post-box-inner">
-            <h3 class="post-title article-title"><?php the_title(); ?></h3>
+            <h4 class="post-title article-title"><?php the_title(); ?></h4>
             <div class="post-separator"></div>
             <div class="post-excerpt article-excerpt"><?php the_excerpt(); ?></div>
           </div>

@@ -1,23 +1,21 @@
 @import "compass/css3";
+@import "foundation/components/grid";
 
-.articles {
+.articles.row {
   margin-top: 1em;
 
-  $alpha-width: 600px;
-  $post-width: $alpha-width - 70px;
-  $post-height: 180px;
-  $post-padding-x: 15px;
-  $post-padding-y: 15px;
+  $excerpt-height: 60px;
 
   ul.posts-list {
     .post-box-outer {
       display: block;
       float: left;
-      margin-bottom: 20px;
 
-      &.post-box-0 { width: $post-width; }
-      &.post-box-1, &.post-box-2, &.post-box-odd, &.post-box-even { width: ($post-width / 2) - 10px; }
-      &.post-box-1, &.post-box-odd { margin-right: 20px; }
+      &.post-box-0 { @include grid-column(12); }
+      &.post-box-1, &.post-box-2, &.post-box-odd, &.post-box-even {
+        @include grid-column(12);
+        @media #{$large-up} { @include grid-column(6); }
+      }
     }
 
     a.post-box {
@@ -25,13 +23,11 @@
       position: relative;
       display: block;
       vertical-align: top;
-      height: $post-height;
       overflow: hidden;
+      margin-bottom: 1.5em;
 
       &:hover, &:active {
-        .post-separator {
-          @include background(linear-gradient(left, rgba($color-prim, 0.7) 0%, rgba($color-prim, 0.7) 80%, rgba($color-prim, 0) 100%));
-        }
+        .post-separator { background-color: rgba($color-prim, 0.7); }
       }
       &:active {
         .post-title { padding-top: 1px; }
@@ -40,7 +36,6 @@
     }
 
     .post-box-inner {
-      height: $post-height - $post-padding-y * 2;
       overflow: hidden;
     }
 
@@ -59,23 +54,23 @@
       vertical-align: top;
       overflow: hidden;
       color: black(0.8);
-      font-size: 20px;
-      font-weight: 400;
       font-family: $title-font-family;
       letter-spacing: 1px;
-      padding-bottom: 5px;
     }
 
     .post-separator {
       width: 100%;
       height: 1px;
-      @include background(linear-gradient(left, rgba($color-prim, 0.5) 0%, rgba($color-prim, 0.5) 80%, rgba($color-prim, 0) 100%));
+      background-color: rgba($color-prim, 0.5);
     }
 
     .post-excerpt {
-      line-height: 22px;
-      color: rgb(164, 164, 164);
-      p { margin: 8px 0; }
+      p {
+        line-height: 1.4;
+        color: black(0.5);
+        margin: 0.5em 0;
+        max-height: $excerpt-height;
+      }
     }
   }
 }

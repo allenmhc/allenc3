@@ -9073,60 +9073,68 @@ th.hide-for-touch {
   text-decoration: none;
 }
 
-/* line 3, ../scss/page/_home.scss */
-.articles {
+/* line 4, ../scss/page/_home.scss */
+.articles.row {
   margin-top: 1em;
 }
-/* line 13, ../scss/page/_home.scss */
-.articles ul.posts-list .post-box-outer {
+/* line 10, ../scss/page/_home.scss */
+.articles.row ul.posts-list .post-box-outer {
   display: block;
   float: left;
-  margin-bottom: 20px;
 }
-/* line 18, ../scss/page/_home.scss */
-.articles ul.posts-list .post-box-outer.post-box-0 {
-  width: 530px;
+/* line 14, ../scss/page/_home.scss */
+.articles.row ul.posts-list .post-box-outer.post-box-0 {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
 }
-/* line 19, ../scss/page/_home.scss */
-.articles ul.posts-list .post-box-outer.post-box-1, .articles ul.posts-list .post-box-outer.post-box-2, .articles ul.posts-list .post-box-outer.post-box-odd, .articles ul.posts-list .post-box-outer.post-box-even {
-  width: 255px;
+/* line 15, ../scss/page/_home.scss */
+.articles.row ul.posts-list .post-box-outer.post-box-1, .articles.row ul.posts-list .post-box-outer.post-box-2, .articles.row ul.posts-list .post-box-outer.post-box-odd, .articles.row ul.posts-list .post-box-outer.post-box-even {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
 }
-/* line 20, ../scss/page/_home.scss */
-.articles ul.posts-list .post-box-outer.post-box-1, .articles ul.posts-list .post-box-outer.post-box-odd {
-  margin-right: 20px;
+@media only screen and (min-width: 64.063em) {
+  /* line 15, ../scss/page/_home.scss */
+  .articles.row ul.posts-list .post-box-outer.post-box-1, .articles.row ul.posts-list .post-box-outer.post-box-2, .articles.row ul.posts-list .post-box-outer.post-box-odd, .articles.row ul.posts-list .post-box-outer.post-box-even {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+  }
 }
-/* line 23, ../scss/page/_home.scss */
-.articles ul.posts-list a.post-box {
+/* line 21, ../scss/page/_home.scss */
+.articles.row ul.posts-list a.post-box {
   text-decoration: none;
   position: relative;
   display: block;
   vertical-align: top;
-  height: 180px;
   overflow: hidden;
+  margin-bottom: 1.5em;
 }
-/* line 32, ../scss/page/_home.scss */
-.articles ul.posts-list a.post-box:hover .post-separator, .articles ul.posts-list a.post-box:active .post-separator {
-  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(79, 108, 136, 0.7)), color-stop(80%, rgba(79, 108, 136, 0.7)), color-stop(100%, rgba(79, 108, 136, 0)));
-  background: -webkit-linear-gradient(left, rgba(79, 108, 136, 0.7) 0%, rgba(79, 108, 136, 0.7) 80%, rgba(79, 108, 136, 0) 100%);
-  background: -moz-linear-gradient(left, rgba(79, 108, 136, 0.7) 0%, rgba(79, 108, 136, 0.7) 80%, rgba(79, 108, 136, 0) 100%);
-  background: -o-linear-gradient(left, rgba(79, 108, 136, 0.7) 0%, rgba(79, 108, 136, 0.7) 80%, rgba(79, 108, 136, 0) 100%);
-  background: linear-gradient(left, rgba(79, 108, 136, 0.7) 0%, rgba(79, 108, 136, 0.7) 80%, rgba(79, 108, 136, 0) 100%);
+/* line 30, ../scss/page/_home.scss */
+.articles.row ul.posts-list a.post-box:hover .post-separator, .articles.row ul.posts-list a.post-box:active .post-separator {
+  background-color: rgba(79, 108, 136, 0.7);
 }
-/* line 37, ../scss/page/_home.scss */
-.articles ul.posts-list a.post-box:active .post-title {
+/* line 33, ../scss/page/_home.scss */
+.articles.row ul.posts-list a.post-box:active .post-title {
   padding-top: 1px;
 }
-/* line 38, ../scss/page/_home.scss */
-.articles ul.posts-list a.post-box:active .post-separator {
+/* line 34, ../scss/page/_home.scss */
+.articles.row ul.posts-list a.post-box:active .post-separator {
   margin-bottom: -1px;
 }
-/* line 42, ../scss/page/_home.scss */
-.articles ul.posts-list .post-box-inner {
-  height: 150px;
+/* line 38, ../scss/page/_home.scss */
+.articles.row ul.posts-list .post-box-inner {
   overflow: hidden;
 }
-/* line 47, ../scss/page/_home.scss */
-.articles ul.posts-list .post-date {
+/* line 42, ../scss/page/_home.scss */
+.articles.row ul.posts-list .post-date {
   position: absolute;
   top: 10px;
   left: 15px;
@@ -9136,33 +9144,24 @@ th.hide-for-touch {
   font-family: "Inconsolata", "Andale Mono", "Courier New", "Courier", monospace;
   display: none;
 }
-/* line 58, ../scss/page/_home.scss */
-.articles ul.posts-list .post-title {
+/* line 53, ../scss/page/_home.scss */
+.articles.row ul.posts-list .post-title {
   vertical-align: top;
   overflow: hidden;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 20px;
-  font-weight: 400;
   font-family: "Roboto Slab", Arial, sans-serif;
   letter-spacing: 1px;
-  padding-bottom: 5px;
 }
-/* line 69, ../scss/page/_home.scss */
-.articles ul.posts-list .post-separator {
+/* line 61, ../scss/page/_home.scss */
+.articles.row ul.posts-list .post-separator {
   width: 100%;
   height: 1px;
-  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(79, 108, 136, 0.5)), color-stop(80%, rgba(79, 108, 136, 0.5)), color-stop(100%, rgba(79, 108, 136, 0)));
-  background: -webkit-linear-gradient(left, rgba(79, 108, 136, 0.5) 0%, rgba(79, 108, 136, 0.5) 80%, rgba(79, 108, 136, 0) 100%);
-  background: -moz-linear-gradient(left, rgba(79, 108, 136, 0.5) 0%, rgba(79, 108, 136, 0.5) 80%, rgba(79, 108, 136, 0) 100%);
-  background: -o-linear-gradient(left, rgba(79, 108, 136, 0.5) 0%, rgba(79, 108, 136, 0.5) 80%, rgba(79, 108, 136, 0) 100%);
-  background: linear-gradient(left, rgba(79, 108, 136, 0.5) 0%, rgba(79, 108, 136, 0.5) 80%, rgba(79, 108, 136, 0) 100%);
+  background-color: rgba(79, 108, 136, 0.5);
 }
-/* line 75, ../scss/page/_home.scss */
-.articles ul.posts-list .post-excerpt {
-  line-height: 22px;
-  color: #a4a4a4;
-}
-/* line 78, ../scss/page/_home.scss */
-.articles ul.posts-list .post-excerpt p {
-  margin: 8px 0;
+/* line 68, ../scss/page/_home.scss */
+.articles.row ul.posts-list .post-excerpt p {
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0.5em 0;
+  max-height: 60px;
 }
