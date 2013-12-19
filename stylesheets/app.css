@@ -7273,7 +7273,7 @@ a img {
 /* Default paragraph styles */
 /* line 164, ../bower_components/foundation/scss/foundation/components/_type.scss */
 p {
-  font-family: inherit;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.6;
@@ -7308,7 +7308,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 /* line 199, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 {
-  font-size: 1.125rem;
+  font-size: 2.125rem;
 }
 
 /* line 200, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -7323,7 +7323,7 @@ h3 {
 
 /* line 202, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h4 {
-  font-size: 0.4375rem;
+  font-size: 1.125rem;
 }
 
 /* line 203, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -7368,7 +7368,7 @@ small {
 
 /* line 234, ../bower_components/foundation/scss/foundation/components/_type.scss */
 code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: "Inconsolata", "Andale Mono", "Courier New", "Courier", monospace;
   font-weight: bold;
   color: #bb260d;
 }
@@ -7382,7 +7382,7 @@ dl {
   line-height: 1.6;
   margin-bottom: 1.25rem;
   list-style-position: outside;
-  font-family: inherit;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
 }
 
 /* line 251, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -7543,7 +7543,7 @@ blockquote p {
 
   /* line 380, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h1 {
-    font-size: 1.75rem;
+    font-size: 2.75rem;
   }
 
   /* line 381, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -7558,7 +7558,7 @@ blockquote p {
 
   /* line 383, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h4 {
-    font-size: 0.75rem;
+    font-size: 1.4375rem;
   }
 }
 /*
@@ -9061,9 +9061,108 @@ th.hide-for-touch {
   text-transform: uppercase;
   color: #666666;
   letter-spacing: 2px;
+  line-height: 0.5;
+}
+/* line 30, ../scss/section/_header.scss */
+#site-title .description small {
+  line-height: 1.6;
 }
 
-/* line 32, ../scss/section/_header.scss */
+/* line 34, ../scss/section/_header.scss */
 #site-title-link {
   text-decoration: none;
+}
+
+/* line 3, ../scss/page/_home.scss */
+.articles {
+  margin-top: 1em;
+}
+/* line 13, ../scss/page/_home.scss */
+.articles ul.posts-list .post-box-outer {
+  display: block;
+  float: left;
+  margin-bottom: 20px;
+}
+/* line 18, ../scss/page/_home.scss */
+.articles ul.posts-list .post-box-outer.post-box-0 {
+  width: 530px;
+}
+/* line 19, ../scss/page/_home.scss */
+.articles ul.posts-list .post-box-outer.post-box-1, .articles ul.posts-list .post-box-outer.post-box-2, .articles ul.posts-list .post-box-outer.post-box-odd, .articles ul.posts-list .post-box-outer.post-box-even {
+  width: 255px;
+}
+/* line 20, ../scss/page/_home.scss */
+.articles ul.posts-list .post-box-outer.post-box-1, .articles ul.posts-list .post-box-outer.post-box-odd {
+  margin-right: 20px;
+}
+/* line 23, ../scss/page/_home.scss */
+.articles ul.posts-list a.post-box {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  vertical-align: top;
+  height: 180px;
+  overflow: hidden;
+}
+/* line 32, ../scss/page/_home.scss */
+.articles ul.posts-list a.post-box:hover .post-separator, .articles ul.posts-list a.post-box:active .post-separator {
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(79, 108, 136, 0.7)), color-stop(80%, rgba(79, 108, 136, 0.7)), color-stop(100%, rgba(79, 108, 136, 0)));
+  background: -webkit-linear-gradient(left, rgba(79, 108, 136, 0.7) 0%, rgba(79, 108, 136, 0.7) 80%, rgba(79, 108, 136, 0) 100%);
+  background: -moz-linear-gradient(left, rgba(79, 108, 136, 0.7) 0%, rgba(79, 108, 136, 0.7) 80%, rgba(79, 108, 136, 0) 100%);
+  background: -o-linear-gradient(left, rgba(79, 108, 136, 0.7) 0%, rgba(79, 108, 136, 0.7) 80%, rgba(79, 108, 136, 0) 100%);
+  background: linear-gradient(left, rgba(79, 108, 136, 0.7) 0%, rgba(79, 108, 136, 0.7) 80%, rgba(79, 108, 136, 0) 100%);
+}
+/* line 37, ../scss/page/_home.scss */
+.articles ul.posts-list a.post-box:active .post-title {
+  padding-top: 1px;
+}
+/* line 38, ../scss/page/_home.scss */
+.articles ul.posts-list a.post-box:active .post-separator {
+  margin-bottom: -1px;
+}
+/* line 42, ../scss/page/_home.scss */
+.articles ul.posts-list .post-box-inner {
+  height: 150px;
+  overflow: hidden;
+}
+/* line 47, ../scss/page/_home.scss */
+.articles ul.posts-list .post-date {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Inconsolata", "Andale Mono", "Courier New", "Courier", monospace;
+  display: none;
+}
+/* line 58, ../scss/page/_home.scss */
+.articles ul.posts-list .post-title {
+  vertical-align: top;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto Slab", Arial, sans-serif;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+/* line 69, ../scss/page/_home.scss */
+.articles ul.posts-list .post-separator {
+  width: 100%;
+  height: 1px;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(79, 108, 136, 0.5)), color-stop(80%, rgba(79, 108, 136, 0.5)), color-stop(100%, rgba(79, 108, 136, 0)));
+  background: -webkit-linear-gradient(left, rgba(79, 108, 136, 0.5) 0%, rgba(79, 108, 136, 0.5) 80%, rgba(79, 108, 136, 0) 100%);
+  background: -moz-linear-gradient(left, rgba(79, 108, 136, 0.5) 0%, rgba(79, 108, 136, 0.5) 80%, rgba(79, 108, 136, 0) 100%);
+  background: -o-linear-gradient(left, rgba(79, 108, 136, 0.5) 0%, rgba(79, 108, 136, 0.5) 80%, rgba(79, 108, 136, 0) 100%);
+  background: linear-gradient(left, rgba(79, 108, 136, 0.5) 0%, rgba(79, 108, 136, 0.5) 80%, rgba(79, 108, 136, 0) 100%);
+}
+/* line 75, ../scss/page/_home.scss */
+.articles ul.posts-list .post-excerpt {
+  line-height: 22px;
+  color: #a4a4a4;
+}
+/* line 78, ../scss/page/_home.scss */
+.articles ul.posts-list .post-excerpt p {
+  margin: 8px 0;
 }

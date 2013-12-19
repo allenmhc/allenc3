@@ -34,10 +34,10 @@
           <h1 class="name">
             <span class="domain">allenc</span><span class="tld">.com</span>
           </h1>
-          <h4 class="description"><?php bloginfo("description"); ?></h4>
+          <h4 class="description"><small><?php bloginfo("description"); ?></small></h4>
         </hgroup>
       </a>
     </div>
   </header>
 
-  <div id="content">
+  <div id="content" class="row">

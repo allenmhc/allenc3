@@ -26,6 +26,8 @@ $color-title: lighten(black, 20%);
     text-transform: uppercase;
     color: lighten($color-title, 20%);
     letter-spacing: 2px;
+    line-height: 0.5;
+    small { line-height: 1.6; }
   }
 }
 

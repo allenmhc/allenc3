@@ -1,5 +1,17 @@
+@import "foundation/functions";
 @import "foundation/settings";
 
+// Foundation customizations
+// $h1-font-size: rem-calc(28);
+// $h3-font-size: rem-calc(22);
+// $h4-font-size: rem-calc(12);
+
+$header-font-family: "Lato", Arial, sans-serif;
+$paragraph-font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+$code-font-family: "Inconsolata", "Andale Mono", "Courier New", "Courier", monospace;
+$title-font-family: "Roboto Slab", Arial, sans-serif;
+
+// Internal vars
 $color-prim: #4F6C88;
 $color-sec: #8A783B;
 $color-ter: #64C19F;
@@ -15,11 +27,3 @@ $color-linkedin: #0083a8;
 $color-quora: #a82400;
 $color-github: #fbfbfb;
 
-$font-default: "Proxima Nova", "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
-$font-titles: "Roboto Slab", Arial, sans-serif;
-$font-monospaced: "Inconsolata", "Andale Mono", "Courier New", "Courier", monospace;
-
-$h1-font-size: rem-calc(28);
-$h4-font-size: rem-calc(12);
-
-$header-font-family: "Lato", Arial, sans-serif;
