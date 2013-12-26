@@ -34,7 +34,7 @@
           <h1 class="name">
             <span class="domain">allenc</span><span class="tld">.com</span>
           </h1>
-          <h4 class="description"><small><?php bloginfo("description"); ?></small></h4>
+          <h3 class="description"><small><?php bloginfo("description"); ?></small></h3>
         </hgroup>
       </a>
     </div>

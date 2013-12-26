@@ -7318,12 +7318,12 @@ h2 {
 
 /* line 201, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h3 {
-  font-size: 1.375rem;
+  font-size: 1.1875rem;
 }
 
 /* line 202, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h4 {
-  font-size: 1.125rem;
+  font-size: 0.8125rem;
 }
 
 /* line 203, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -7553,12 +7553,12 @@ blockquote p {
 
   /* line 382, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h3 {
-    font-size: 1.6875rem;
+    font-size: 1.5rem;
   }
 
   /* line 383, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h4 {
-    font-size: 1.4375rem;
+    font-size: 1.125rem;
   }
 }
 /*
@@ -9075,7 +9075,7 @@ th.hide-for-touch {
 
 /* line 4, ../scss/section/_articles.scss */
 .articles.row {
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 /* line 10, ../scss/section/_articles.scss */
 .articles.row ul.posts-list .post-box-outer {
@@ -9119,7 +9119,7 @@ th.hide-for-touch {
 }
 /* line 30, ../scss/section/_articles.scss */
 .articles.row ul.posts-list a.post-box:hover .post-separator, .articles.row ul.posts-list a.post-box:active .post-separator {
-  background-color: rgba(79, 108, 136, 0.8);
+  background-color: rgba(100, 193, 159, 0.8);
 }
 /* line 33, ../scss/section/_articles.scss */
 .articles.row ul.posts-list a.post-box:active .post-title {
@@ -9156,7 +9156,7 @@ th.hide-for-touch {
 .articles.row ul.posts-list .post-separator {
   width: 100%;
   height: 1px;
-  background-color: rgba(79, 108, 136, 0.6);
+  background-color: rgba(100, 193, 159, 0.6);
 }
 /* line 68, ../scss/section/_articles.scss */
 .articles.row ul.posts-list .post-excerpt p {
@@ -9185,7 +9185,7 @@ th.hide-for-touch {
   width: 1px;
   height: 100%;
   display: block;
-  background-color: rgba(79, 108, 136, 0.7);
+  background-color: rgba(100, 193, 159, 0.7);
   content: "";
 }
 /* line 27, ../scss/section/_archives.scss */
@@ -9194,7 +9194,7 @@ th.hide-for-touch {
 .related-posts a.post-line:hover:before {
   left: -1px;
   width: 3px;
-  background-color: rgba(79, 108, 136, 0.9);
+  background-color: rgba(100, 193, 159, 0.9);
 }
 /* line 33, ../scss/section/_archives.scss */
 .archives.row a.post-line:active,
@@ -9208,13 +9208,18 @@ th.hide-for-touch {
 .search-results .archive-date,
 .related-posts .archive-date {
   font-family: "Inconsolata", "Andale Mono", "Courier New", "Courier", monospace;
-  font-size: 0.75rem;
-  color: #8a783b;
   vertical-align: top;
   line-height: 1;
   display: block;
+  margin: 0;
 }
-/* line 48, ../scss/section/_archives.scss */
+/* line 45, ../scss/section/_archives.scss */
+.archives.row .archive-date time,
+.search-results .archive-date time,
+.related-posts .archive-date time {
+  color: #8a783b;
+}
+/* line 50, ../scss/section/_archives.scss */
 .archives.row .post-title,
 .search-results .post-title,
 .related-posts .post-title {

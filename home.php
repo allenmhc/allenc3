@@ -25,7 +25,7 @@ global $wp_query;
       <li class="post-box-outer <?php echo "post-box-${i}"; ?>">
         <a href="<?php the_permalink(); ?>" class="post-box article-box">
           <div class="post-box-inner">
-            <h4 class="post-title article-title"><?php the_title(); ?></h4>
+            <h3 class="post-title article-title"><?php the_title(); ?></h3>
             <div class="post-separator"></div>
             <div class="post-excerpt article-excerpt"><?php the_excerpt(); ?></div>
           </div>
@@ -48,8 +48,10 @@ global $wp_query;
       ?>
       <li class="post-line-outer small-12 column">
         <a href="<?php the_permalink(); ?>" class="post-line">
-          <time class="post-date archive-date"><?php the_time("Y.m.d"); ?></time>
-          <h5 class="post-title archive-title"><?php the_title(); ?></h5>
+          <h4 class="post-date archive-date">
+            <small><time><?php the_time("Y.m.d"); ?></time></small>
+          </h4>
+          <h4 class="post-title archive-title"><?php the_title(); ?></h4>
         </a>
       </li>
       <?php endwhile; ?>

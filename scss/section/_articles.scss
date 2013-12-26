@@ -2,7 +2,7 @@
 @import "foundation/components/grid";
 
 .articles.row {
-  margin-top: 1em;
+  margin-top: 1.5em;
 
   $excerpt-height: 60px;
 
@@ -27,7 +27,7 @@
       margin-bottom: 1.5em;
 
       &:hover, &:active {
-        .post-separator { background-color: rgba($color-prim, 0.8); }
+        .post-separator { background-color: rgba($color-ter, 0.8); }
       }
       &:active {
         .post-title { padding-top: 1px; }
@@ -61,7 +61,7 @@
     .post-separator {
       width: 100%;
       height: 1px;
-      background-color: rgba($color-prim, 0.6);
+      background-color: rgba($color-ter, 0.6);
     }
 
     .post-excerpt {

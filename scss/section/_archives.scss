@@ -19,7 +19,7 @@
       width: 1px;
       height: 100%;
       display: block;
-      background-color: rgba($color-prim, 0.7);
+      background-color: rgba($color-ter, 0.7);
       content: "";
     }
 
@@ -27,7 +27,7 @@
       &:before {
         left: -1px;
         width: 3px;
-        background-color: rgba($color-prim, 0.9);
+        background-color: rgba($color-ter, 0.9);
       }
     }
     &:active {
@@ -38,11 +38,13 @@
 
   .archive-date {
     font-family: $code-font-family;
-    font-size: 0.75rem;
-    color: $color-sec;
     vertical-align: top;
     line-height: 1;
     display: block;
+    margin: 0;
+    time {
+      color: $color-sec;
+    }
   }
 
   .post-title {
