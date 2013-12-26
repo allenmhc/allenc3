@@ -35,6 +35,26 @@ global $wp_query;
       <?php endwhile; ?>
     </ul>
   </section>
+
+  <section class="archives row">
+    <ul class="posts-list archives-list clearfix no-bullet">
+      <?php
+      rewind_posts();
+      $query_args = array(
+        "posts_per_page" => 10
+      );
+      query_posts($query_args);
+      while (have_posts()): the_post();
+      ?>
+      <li class="post-line-outer small-12 column">
+        <a href="<?php the_permalink(); ?>" class="post-line">
+          <time class="post-date archive-date"><?php the_time("Y.m.d"); ?></time>
+          <h5 class="post-title archive-title"><?php the_title(); ?></h5>
+        </a>
+      </li>
+      <?php endwhile; ?>
+    </ul>
+  </section>
 </div>
 
 <div id="beta" class="medium-5 large-4 column">
