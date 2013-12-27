@@ -2,8 +2,8 @@
 @import "foundation/settings";
 
 // Foundation customizations
-$h1-font-size: rem-calc(44);
-$h2-font-size: rem-calc(37);
+$h1-font-size: 2.2rem;
+$h2-font-size: 2rem;
 $h3-font-size: rem-calc(24);
 $h4-font-size: rem-calc(18);
 
@@ -16,6 +16,28 @@ $title-font-family: "Roboto Slab", Georgia, serif;
 $color-prim: #4F6C88;
 $color-sec: #8A783B;
 $color-ter: #64C19F;
+
+// Flat colors
+$color-turq: #1abc9c;
+$color-turq-dark: #16a085;
+$color-green: #2ecc71;
+$color-green-dark: #27ae60;
+$color-blue: #3498db;
+$color-blue-dark: #2980b9;
+$color-purple: #9b59b6;
+$color-purple-dark: #8e44ad;
+$color-navy: #34495e;
+$color-navy-dark: #2c3e50;
+$color-yellow: #f1c40f;
+$color-yellow-dark: #f39c12;
+$color-orange: #e67e22;
+$color-orange-dark: #d35400;
+$color-red: #e74c3c;
+$color-red-dark: #c0392b;
+$color-white: #ecf0f1;
+$color-white-dark: #bdc3c7;
+$color-grey: #95a5a6;
+$color-grey-dark: #7f8c8d;
 
 $color-home: #A60000;
 $color-articles: #A64B00;

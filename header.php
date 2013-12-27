@@ -18,7 +18,7 @@
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS" href="<?php bloginfo('rss2_url'); ?>" />
   <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.png" />
 
-  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400' rel='stylesheet' type='text/css'>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -27,16 +27,21 @@
 </head>
 <body>
 
-  <header id="site-header" class="row">
-    <div class="small-centered column">
-      <a id="site-title-link" href="<?php echo get_home_url(); ?>">
-        <hgroup id="site-title">
-          <h1 class="name">
-            <span class="domain">allenc</span><span class="tld">.com</span>
-          </h1>
-          <h3 class="description"><small><?php bloginfo("description"); ?></small></h3>
-        </hgroup>
-      </a>
+  <header id="site-header">
+    <div class="row">
+      <div class="small-centered column">
+        <a id="site-title-link" href="<?php echo get_home_url(); ?>">
+          <h2 id="title-icon" class="left">
+            <span class="first dot">&middot;</span>
+            <span class="second dot">&middot;</span>
+            <span class="third dot">&middot;</span>
+          </h2>
+          <hgroup id="site-title" class="left">
+            <h1 class="name">allenc</h1>
+            <h2 class="description"><?php bloginfo("description"); ?></h2>
+          </hgroup>
+        </a>
+      </div>
     </div>
   </header>
 

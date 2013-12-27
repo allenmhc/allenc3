@@ -1,33 +1,48 @@
 #site-header {
-  background-color: rgba($color-prim, 0.4);
-  border-bottom: 1px solid black(0.5);
+  background-color: lighten(black, 20%);
+  border-bottom: 3px solid $color-yellow;
   padding: 10px 0 15px;
 }
 
-$color-title: lighten(black, 20%);
+$color-title-icon: $color-yellow;
+#title-icon {
+  font-weight: 400;
+  padding: 0.2rem 0.5rem;
+  color: $color-title-icon;
+  line-height: 0;
+  border: 3px solid $color-title-icon;
+  @include border-radius(6px);
+  margin: 8px 10px 0 0;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  font-size: 36px;
+
+  .dot { position: absolute; }
+  .dot.first { top: 2px; right: 0px; }
+  .dot.second { bottom: 8px; left: 0px; }
+  .dot.third { bottom: 8px; right: 0px; }
+}
+
 #site-title {
   .name, .description {
     margin: 0;
     padding: 0;
   }
+  $color-title: $color-white;
   .name {
-    letter-spacing: 3px;
-    .domain {
-      color: $color-title;
-      font-weight: 400;
-    }
-    .tld {
-      color: lighten($color-title, 30%);
-      font-weight: 100;
-    }
+    letter-spacing: 4px;
+    color: $color-title;
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: uppercase;
   }
   .description {
-    font-weight: 400;
-    text-transform: uppercase;
-    color: lighten($color-title, 20%);
-    letter-spacing: 2px;
+    color: $color-white-dark;
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 1px;
     line-height: 0.5;
-    small { line-height: 1.6; }
   }
 }
 
