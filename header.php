@@ -30,17 +30,25 @@
   <header id="site-header">
     <div class="row">
       <div class="small-centered column">
-        <a id="site-title-link" href="<?php echo get_home_url(); ?>">
-          <h2 id="title-icon" class="left">
-            <span class="first dot">&middot;</span>
-            <span class="second dot">&middot;</span>
-            <span class="third dot">&middot;</span>
-          </h2>
-          <hgroup id="site-title" class="left">
-            <h1 class="name">allenc</h1>
-            <h2 class="description"><?php bloginfo("description"); ?></h2>
-          </hgroup>
-        </a>
+        <div class="row">
+          <div class="medium-6 column">
+            <a id="site-title-link" class="clearfix" href="<?php echo get_home_url(); ?>">
+              <h2 id="title-icon" class="left">
+                <span class="first dot">&middot;</span>
+                <span class="second dot">&middot;</span>
+                <span class="third dot">&middot;</span>
+              </h2>
+              <hgroup id="site-title">
+                <h1 class="name">allenc</h1>
+                <h2 class="description"><?php bloginfo("description"); ?></h2>
+              </hgroup>
+            </a>
+          </div>
+
+          <nav class="medium-6 column">
+
+          </nav>
+        </div>
       </div>
     </div>
   </header>

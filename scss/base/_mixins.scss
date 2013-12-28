@@ -45,3 +45,15 @@
   @return rgba(255, 255, 255, $opacity);
 }
 
+@mixin social-icon-content-color($name, $content, $color) {
+  a.#{$name} {
+    background-color: lighten(black, 20%);
+    &:before { content: $content; }
+    &:hover {
+      background-color: $color;
+    }
+    &:active {
+      background-color: darken($color, 10%);
+    }
+  }
+}

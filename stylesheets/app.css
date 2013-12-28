@@ -9029,6 +9029,11 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
+/* line 1, ../scss/base/_global.scss */
+body {
+  min-width: 320px;
+}
+
 /* line 3, ../scss/base/_overrides.scss */
 h1 {
   font-size: 36px;
@@ -9058,7 +9063,7 @@ h2 {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
-  margin: 8px 10px 0 0;
+  margin: 8px 10px 25px 0;
   position: relative;
   width: 24px;
   height: 24px;
@@ -9103,12 +9108,128 @@ h2 {
   font-weight: 100;
   font-size: 16px;
   letter-spacing: 1px;
-  line-height: 0.5;
+  line-height: 1.1;
 }
 
 /* line 49, ../scss/section/_header.scss */
 #site-title-link {
+  display: block;
   text-decoration: none;
+}
+
+/* line 55, ../scss/section/_header.scss */
+#social-icons .social-icon {
+  margin-left: 0.3rem;
+}
+/* line 58, ../scss/section/_header.scss */
+#social-icons .social-icon a {
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 4px 7px;
+  border: 2px solid #bdc3c7;
+  color: #bdc3c7;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 69, ../scss/section/_header.scss */
+#social-icons .social-icon a:before {
+  font: 130%/1.35 zocial;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+}
+/* line 77, ../scss/section/_header.scss */
+#social-icons .social-icon span {
+  display: none;
+}
+/* line 49, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.twitter {
+  background-color: #333333;
+}
+/* line 51, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.twitter:before {
+  content: "T";
+}
+/* line 52, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.twitter:hover {
+  background-color: #46c0fb;
+}
+/* line 55, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.twitter:active {
+  background-color: #14affa;
+}
+/* line 49, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.googleplus {
+  background-color: #333333;
+}
+/* line 51, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.googleplus:before {
+  content: "+";
+}
+/* line 52, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.googleplus:hover {
+  background-color: #dd4b39;
+}
+/* line 55, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.googleplus:active {
+  background-color: #c23321;
+}
+/* line 49, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.linkedin {
+  background-color: #333333;
+}
+/* line 51, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.linkedin:before {
+  content: "L";
+}
+/* line 52, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.linkedin:hover {
+  background-color: #0083a8;
+}
+/* line 55, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.linkedin:active {
+  background-color: #005b75;
+}
+/* line 49, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.quora {
+  background-color: #333333;
+}
+/* line 51, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.quora:before {
+  content: "q";
+}
+/* line 52, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.quora:hover {
+  background-color: #a82400;
+}
+/* line 55, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.quora:active {
+  background-color: #751900;
+}
+/* line 49, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.github {
+  background-color: #333333;
+}
+/* line 51, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.github:before {
+  content: "\00E8";
+}
+/* line 52, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.github:hover {
+  background-color: #fbfbfb;
+}
+/* line 55, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.github:active {
+  background-color: #e2e2e2;
 }
 
 /* line 4, ../scss/section/_articles.scss */
@@ -9265,4 +9386,130 @@ h2 {
   letter-spacing: 1px;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 0;
+}
+
+/* line 1, ../scss/section/_footer.scss */
+#site-footer {
+  background-color: #333333;
+  border-top: 3px solid #f1c40f;
+  padding: 15px 0 25px;
+}
+
+/* line 7, ../scss/section/_footer.scss */
+#social-icons {
+  width: 230px;
+}
+/* line 10, ../scss/section/_footer.scss */
+#social-icons .social-icon {
+  margin-left: 0.3rem;
+}
+/* line 13, ../scss/section/_footer.scss */
+#social-icons .social-icon a {
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 4px 7px;
+  border: 2px solid #bdc3c7;
+  color: #bdc3c7;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 24, ../scss/section/_footer.scss */
+#social-icons .social-icon a:before {
+  font: 130%/1.35 zocial;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+}
+/* line 32, ../scss/section/_footer.scss */
+#social-icons .social-icon span {
+  display: none;
+}
+/* line 49, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.twitter {
+  background-color: #333333;
+}
+/* line 51, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.twitter:before {
+  content: "T";
+}
+/* line 52, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.twitter:hover {
+  background-color: #46c0fb;
+}
+/* line 55, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.twitter:active {
+  background-color: #14affa;
+}
+/* line 49, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.googleplus {
+  background-color: #333333;
+}
+/* line 51, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.googleplus:before {
+  content: "+";
+}
+/* line 52, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.googleplus:hover {
+  background-color: #dd4b39;
+}
+/* line 55, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.googleplus:active {
+  background-color: #c23321;
+}
+/* line 49, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.linkedin {
+  background-color: #333333;
+}
+/* line 51, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.linkedin:before {
+  content: "L";
+}
+/* line 52, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.linkedin:hover {
+  background-color: #0083a8;
+}
+/* line 55, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.linkedin:active {
+  background-color: #005b75;
+}
+/* line 49, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.quora {
+  background-color: #333333;
+}
+/* line 51, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.quora:before {
+  content: "q";
+}
+/* line 52, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.quora:hover {
+  background-color: #a82400;
+}
+/* line 55, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.quora:active {
+  background-color: #751900;
+}
+/* line 49, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.github {
+  background-color: #333333;
+}
+/* line 51, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.github:before {
+  content: "\00E8";
+}
+/* line 52, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.github:hover {
+  background-color: #fbfbfb;
+}
+/* line 55, ../scss/base/_mixins.scss */
+#social-icons .social-icon a.github:active {
+  background-color: #e2e2e2;
 }
