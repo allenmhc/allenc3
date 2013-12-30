@@ -4,6 +4,19 @@
   padding: 15px 0 25px;
 }
 
+@mixin social-icon-content-color($name, $content, $color) {
+  a.#{$name} {
+    background-color: lighten(black, 20%);
+    &:before { content: $content; }
+    &:hover {
+      background-color: $color;
+    }
+    &:active {
+      background-color: darken($color, 10%);
+    }
+  }
+}
+
 #social-icons {
   width: 230px; // Temporarily centered.
 

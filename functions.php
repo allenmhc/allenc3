@@ -66,7 +66,7 @@ function allenc_add_rewrite_tags() {
 }
 
 function nav_link($page) {
-  $css_class = "nav-item";
+  $css_class = "site-nav-item small-6 column";
   $href = get_permalink(get_page_by_title($page)->ID);
   $attr = "";
   if (allenc_is_page($page)) { $css_class .= " active"; }

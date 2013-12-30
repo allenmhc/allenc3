@@ -59,21 +59,67 @@ $color-title-icon: $color-yellow;
   text-decoration: none;
 }
 
+@mixin round-box-corner($direction, $px) {
+  #{$direction}: #{$px};
+  border-#{$direction}: none;
+  @if $direction == left {
+    @include border-left-radius(0);
+  } @else if $direction == right {
+    @include border-right-radius(0);
+  } @else if $direction == top {
+    @include border-top-radius(0);
+  } @else {
+    @include border-bottom-radius(0);
+  }
+}
+
 #site-nav {
   margin-top: 1rem;
   margin-bottom: 0;
-  text-align: center;
-  list-style: none;
   font-family: $header-font-family;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  // text-transform: uppercase;
+
+  $color-nav: $color-purple;
   .site-nav-item {
-    display: inline-block;
-    margin: 0 0.5rem;
-    a {
-      color: $color-turq;
-      &:hover { color: lighten($color-turq, 10%); }
-      &:active { color: $color-turq-dark; }
+    margin: 5px -5px;
+    color: $color-nav;
+    &:hover { color: lighten($color-nav, 10%); }
+    &:active { color: darken($color-nav, 10%); }
+    &:first-of-type { text-align: right; }
+    &:last-of-type { text-align: left; }
+  }
+
+  .site-nav-item {
+    &:before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      display: none;
+      border: 2px solid $color-white-dark;
+      @include border-radius(6px);
     }
+    &:first-of-type:before { @include round-box-corner(right, -5px); }
+    &:last-of-type:before { @include round-box-corner(left, -5px); }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      display: block;
+      background-color: $color-white-dark;
+      @include border-radius(4px);
+    }
+    &:first-of-type:after { right: -2px; }
+    &:last-of-type:after { left: -2px; }
+  }
+  .row {
+    &:first-of-type .site-nav-item:before { @include round-box-corner(bottom, -5px); }
+    &:last-of-type .site-nav-item:before { @include round-box-corner(top, -5px); }
+    &:first-of-type .site-nav-item:after { bottom: -2px; }
+    &:last-of-type .site-nav-item:after { top: -2px; }
   }
 }
