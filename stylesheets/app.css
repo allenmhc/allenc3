@@ -9128,37 +9128,46 @@ h2 {
   text-decoration: none;
 }
 
-/* line 76, ../scss/section/_header.scss */
+/* line 62, ../scss/section/_header.scss */
 #site-nav {
-  margin-top: 1rem;
+  margin-top: 9px;
   margin-bottom: 0;
   font-family: "Lato", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 1px;
 }
-/* line 86, ../scss/section/_header.scss */
+/* line 71, ../scss/section/_header.scss */
 #site-nav .site-nav-item {
   margin: 5px -5px;
-  color: #9b59b6;
+  color: #e74c3c;
 }
-/* line 89, ../scss/section/_header.scss */
+/* line 74, ../scss/section/_header.scss */
 #site-nav .site-nav-item:hover {
-  color: #b07cc6;
+  color: #ed7669;
 }
-/* line 90, ../scss/section/_header.scss */
+/* line 75, ../scss/section/_header.scss */
 #site-nav .site-nav-item:active {
-  color: #804399;
+  color: #d62c1a;
 }
-/* line 91, ../scss/section/_header.scss */
+/* line 76, ../scss/section/_header.scss */
 #site-nav .site-nav-item:first-of-type {
   text-align: right;
 }
-/* line 92, ../scss/section/_header.scss */
+/* line 77, ../scss/section/_header.scss */
 #site-nav .site-nav-item:last-of-type {
   text-align: left;
 }
-/* line 96, ../scss/section/_header.scss */
+/* line 78, ../scss/section/_header.scss */
+#site-nav .site-nav-item.active {
+  font-weight: 400;
+  color: #ed7669;
+}
+/* line 81, ../scss/section/_header.scss */
+#site-nav .site-nav-item.active span {
+  border-bottom: 1px solid #ed7669;
+}
+/* line 86, ../scss/section/_header.scss */
 #site-nav .site-nav-item:after {
   position: absolute;
   content: "";
@@ -9172,19 +9181,23 @@ h2 {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 105, ../scss/section/_header.scss */
+/* line 95, ../scss/section/_header.scss */
 #site-nav .site-nav-item:first-of-type:after {
   right: -2px;
 }
-/* line 106, ../scss/section/_header.scss */
+/* line 96, ../scss/section/_header.scss */
 #site-nav .site-nav-item:last-of-type:after {
   left: -2px;
 }
-/* line 109, ../scss/section/_header.scss */
+/* line 97, ../scss/section/_header.scss */
+#site-nav .site-nav-item.active:after {
+  background-color: #e74c3c;
+}
+/* line 100, ../scss/section/_header.scss */
 #site-nav .row:first-of-type .site-nav-item:after {
   bottom: -2px;
 }
-/* line 110, ../scss/section/_header.scss */
+/* line 101, ../scss/section/_header.scss */
 #site-nav .row:last-of-type .site-nav-item:after {
   top: -2px;
 }

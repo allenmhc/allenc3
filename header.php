@@ -49,12 +49,12 @@
 
           <nav id="site-nav" class="medium-6 column">
             <div class="row">
-              <?php nav_link("home") ?>home</a>
-              <?php nav_link("articles") ?>articles</a>
+              <?php nav_link("home") ?><span>home</span></a>
+              <?php nav_link("articles") ?><span>articles</span></a>
             </div>
             <div class="row">
-              <?php nav_link("about") ?>about</a>
-              <?php nav_link("archives") ?>archives</a>
+              <?php nav_link("about") ?><span>about</span></a>
+              <?php nav_link("archives") ?><span>archives</span></a>
             </div>
           </nav>
         </div>

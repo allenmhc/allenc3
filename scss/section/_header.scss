@@ -59,30 +59,15 @@ $color-title-icon: $color-yellow;
   text-decoration: none;
 }
 
-@mixin round-box-corner($direction, $px) {
-  #{$direction}: #{$px};
-  border-#{$direction}: none;
-  @if $direction == left {
-    @include border-left-radius(0);
-  } @else if $direction == right {
-    @include border-right-radius(0);
-  } @else if $direction == top {
-    @include border-top-radius(0);
-  } @else {
-    @include border-bottom-radius(0);
-  }
-}
-
 #site-nav {
-  margin-top: 1rem;
+  margin-top: 9px;
   margin-bottom: 0;
   font-family: $header-font-family;
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 1px;
-  // text-transform: uppercase;
 
-  $color-nav: $color-purple;
+  $color-nav: $color-red;
   .site-nav-item {
     margin: 5px -5px;
     color: $color-nav;
@@ -90,6 +75,11 @@ $color-title-icon: $color-yellow;
     &:active { color: darken($color-nav, 10%); }
     &:first-of-type { text-align: right; }
     &:last-of-type { text-align: left; }
+    &.active {
+      font-weight: 400;
+      color: lighten($color-nav, 10%);
+      span { border-bottom: 1px solid lighten($color-nav, 10%); }
+    }
   }
 
   .site-nav-item {
@@ -104,6 +94,7 @@ $color-title-icon: $color-yellow;
     }
     &:first-of-type:after { right: -2px; }
     &:last-of-type:after { left: -2px; }
+    &.active:after { background-color: $color-nav; }
   }
   .row {
     &:first-of-type .site-nav-item:after { bottom: -2px; }
