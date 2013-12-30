@@ -9078,29 +9078,33 @@ h2 {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
-/* line 26, ../scss/section/_header.scss */
+/* line 27, ../scss/section/_header.scss */
 #title-icon .dot.first {
   top: 2px;
   right: 2px;
 }
-/* line 27, ../scss/section/_header.scss */
+/* line 28, ../scss/section/_header.scss */
 #title-icon .dot.second {
   bottom: 2px;
   left: 2px;
 }
-/* line 28, ../scss/section/_header.scss */
+/* line 29, ../scss/section/_header.scss */
 #title-icon .dot.third {
   bottom: 2px;
   right: 2px;
 }
 
-/* line 32, ../scss/section/_header.scss */
+/* line 33, ../scss/section/_header.scss */
 #site-title .name, #site-title .description {
   margin: 0;
   padding: 0;
 }
-/* line 37, ../scss/section/_header.scss */
+/* line 38, ../scss/section/_header.scss */
 #site-title .name {
   letter-spacing: 4px;
   color: #ecf0f1;
@@ -9108,12 +9112,12 @@ h2 {
   font-size: 28px;
   text-transform: uppercase;
 }
-/* line 43, ../scss/section/_header.scss */
+/* line 44, ../scss/section/_header.scss */
 #site-title .name .tld {
   font-weight: 100;
   font-size: 14px;
 }
-/* line 48, ../scss/section/_header.scss */
+/* line 49, ../scss/section/_header.scss */
 #site-title .description {
   color: #bdc3c7;
   font-weight: 100;
@@ -9122,13 +9126,25 @@ h2 {
   line-height: 1.1;
 }
 
-/* line 57, ../scss/section/_header.scss */
+/* line 58, ../scss/section/_header.scss */
 #site-title-link {
   display: block;
   text-decoration: none;
 }
+/* line 63, ../scss/section/_header.scss */
+#site-title-link:hover #title-icon .dot.first {
+  top: 10px;
+}
+/* line 64, ../scss/section/_header.scss */
+#site-title-link:hover #title-icon .dot.second {
+  bottom: 10px;
+}
+/* line 65, ../scss/section/_header.scss */
+#site-title-link:hover #title-icon .dot.third {
+  right: 10px;
+}
 
-/* line 62, ../scss/section/_header.scss */
+/* line 70, ../scss/section/_header.scss */
 #site-nav {
   margin-top: 9px;
   margin-bottom: 0;
@@ -9137,37 +9153,37 @@ h2 {
   font-size: 16px;
   letter-spacing: 1px;
 }
-/* line 71, ../scss/section/_header.scss */
+/* line 79, ../scss/section/_header.scss */
 #site-nav .site-nav-item {
   margin: 5px -5px;
   color: #e74c3c;
 }
-/* line 74, ../scss/section/_header.scss */
+/* line 82, ../scss/section/_header.scss */
 #site-nav .site-nav-item:hover {
   color: #ed7669;
 }
-/* line 75, ../scss/section/_header.scss */
+/* line 83, ../scss/section/_header.scss */
 #site-nav .site-nav-item:active {
   color: #d62c1a;
 }
-/* line 76, ../scss/section/_header.scss */
+/* line 84, ../scss/section/_header.scss */
 #site-nav .site-nav-item:first-of-type {
   text-align: right;
 }
-/* line 77, ../scss/section/_header.scss */
+/* line 85, ../scss/section/_header.scss */
 #site-nav .site-nav-item:last-of-type {
   text-align: left;
 }
-/* line 78, ../scss/section/_header.scss */
+/* line 86, ../scss/section/_header.scss */
 #site-nav .site-nav-item.active {
   font-weight: 400;
   color: #ed7669;
 }
-/* line 81, ../scss/section/_header.scss */
+/* line 89, ../scss/section/_header.scss */
 #site-nav .site-nav-item.active span {
   border-bottom: 1px solid #ed7669;
 }
-/* line 86, ../scss/section/_header.scss */
+/* line 94, ../scss/section/_header.scss */
 #site-nav .site-nav-item:after {
   position: absolute;
   content: "";
@@ -9181,23 +9197,23 @@ h2 {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 95, ../scss/section/_header.scss */
+/* line 103, ../scss/section/_header.scss */
 #site-nav .site-nav-item:first-of-type:after {
   right: -2px;
 }
-/* line 96, ../scss/section/_header.scss */
+/* line 104, ../scss/section/_header.scss */
 #site-nav .site-nav-item:last-of-type:after {
   left: -2px;
 }
-/* line 97, ../scss/section/_header.scss */
+/* line 105, ../scss/section/_header.scss */
 #site-nav .site-nav-item.active:after {
   background-color: #e74c3c;
 }
-/* line 100, ../scss/section/_header.scss */
+/* line 108, ../scss/section/_header.scss */
 #site-nav .row:first-of-type .site-nav-item:after {
   bottom: -2px;
 }
-/* line 101, ../scss/section/_header.scss */
+/* line 109, ../scss/section/_header.scss */
 #site-nav .row:last-of-type .site-nav-item:after {
   top: -2px;
 }

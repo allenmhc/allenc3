@@ -22,6 +22,7 @@ $color-title-icon: $color-yellow;
     height: 6px;
     background-color: $color-title-icon;
     @include border-radius(3px);
+    @include transition(all 0.4s linear);
   }
   .dot.first { top: 2px; right: 2px; }
   .dot.second { bottom: 2px; left: 2px; }
@@ -57,6 +58,13 @@ $color-title-icon: $color-yellow;
 #site-title-link {
   display: block;
   text-decoration: none;
+  &:hover {
+    #title-icon {
+      .dot.first { top: 10px; }
+      .dot.second { bottom: 10px; }
+      .dot.third { right: 10px; }
+    }
+  }
 }
 
 #site-nav {
