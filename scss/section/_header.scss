@@ -93,17 +93,6 @@ $color-title-icon: $color-yellow;
   }
 
   .site-nav-item {
-    &:before {
-      position: absolute;
-      content: "";
-      width: 12px;
-      height: 12px;
-      display: none;
-      border: 2px solid $color-white-dark;
-      @include border-radius(6px);
-    }
-    &:first-of-type:before { @include round-box-corner(right, -5px); }
-    &:last-of-type:before { @include round-box-corner(left, -5px); }
     &:after {
       position: absolute;
       content: "";
@@ -117,8 +106,6 @@ $color-title-icon: $color-yellow;
     &:last-of-type:after { left: -2px; }
   }
   .row {
-    &:first-of-type .site-nav-item:before { @include round-box-corner(bottom, -5px); }
-    &:last-of-type .site-nav-item:before { @include round-box-corner(top, -5px); }
     &:first-of-type .site-nav-item:after { bottom: -2px; }
     &:last-of-type .site-nav-item:after { top: -2px; }
   }
