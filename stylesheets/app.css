@@ -9054,8 +9054,6 @@ h2 {
 /* line 8, ../scss/section/_header.scss */
 #title-icon {
   font-weight: 400;
-  padding: 0.2rem 0.5rem;
-  color: #f1c40f;
   line-height: 0;
   border: 3px solid #f1c40f;
   -webkit-border-radius: 6px;
@@ -9069,32 +9067,40 @@ h2 {
   height: 24px;
   font-size: 36px;
 }
-/* line 21, ../scss/section/_header.scss */
+/* line 19, ../scss/section/_header.scss */
 #title-icon .dot {
   position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #f1c40f;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
-/* line 22, ../scss/section/_header.scss */
+/* line 26, ../scss/section/_header.scss */
 #title-icon .dot.first {
   top: 2px;
-  right: 0px;
+  right: 2px;
 }
-/* line 23, ../scss/section/_header.scss */
+/* line 27, ../scss/section/_header.scss */
 #title-icon .dot.second {
-  bottom: 8px;
-  left: 0px;
+  bottom: 2px;
+  left: 2px;
 }
-/* line 24, ../scss/section/_header.scss */
+/* line 28, ../scss/section/_header.scss */
 #title-icon .dot.third {
-  bottom: 8px;
-  right: 0px;
+  bottom: 2px;
+  right: 2px;
 }
 
-/* line 28, ../scss/section/_header.scss */
+/* line 32, ../scss/section/_header.scss */
 #site-title .name, #site-title .description {
   margin: 0;
   padding: 0;
 }
-/* line 33, ../scss/section/_header.scss */
+/* line 37, ../scss/section/_header.scss */
 #site-title .name {
   letter-spacing: 4px;
   color: #ecf0f1;
@@ -9102,7 +9108,12 @@ h2 {
   font-size: 28px;
   text-transform: uppercase;
 }
-/* line 40, ../scss/section/_header.scss */
+/* line 43, ../scss/section/_header.scss */
+#site-title .name .tld {
+  font-weight: 100;
+  font-size: 14px;
+}
+/* line 48, ../scss/section/_header.scss */
 #site-title .description {
   color: #bdc3c7;
   font-weight: 100;
@@ -9111,13 +9122,13 @@ h2 {
   line-height: 1.1;
 }
 
-/* line 49, ../scss/section/_header.scss */
+/* line 57, ../scss/section/_header.scss */
 #site-title-link {
   display: block;
   text-decoration: none;
 }
 
-/* line 54, ../scss/section/_header.scss */
+/* line 62, ../scss/section/_header.scss */
 #site-nav {
   margin-top: 1rem;
   margin-bottom: 0;
@@ -9127,20 +9138,20 @@ h2 {
   font-weight: 300;
   font-size: 18px;
 }
-/* line 62, ../scss/section/_header.scss */
+/* line 70, ../scss/section/_header.scss */
 #site-nav .site-nav-item {
   display: inline-block;
   margin: 0 0.5rem;
 }
-/* line 65, ../scss/section/_header.scss */
+/* line 73, ../scss/section/_header.scss */
 #site-nav .site-nav-item a {
   color: #1abc9c;
 }
-/* line 67, ../scss/section/_header.scss */
+/* line 75, ../scss/section/_header.scss */
 #site-nav .site-nav-item a:hover {
   color: #28e1bd;
 }
-/* line 68, ../scss/section/_header.scss */
+/* line 76, ../scss/section/_header.scss */
 #site-nav .site-nav-item a:active {
   color: #16a085;
 }

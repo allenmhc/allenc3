@@ -34,12 +34,14 @@
           <div class="medium-6 column">
             <a id="site-title-link" class="clearfix" href="<?php echo get_home_url(); ?>">
               <h2 id="title-icon" class="left">
-                <span class="first dot">&middot;</span>
-                <span class="second dot">&middot;</span>
-                <span class="third dot">&middot;</span>
+                <div class="first dot"></div>
+                <div class="second dot"></div>
+                <div class="third dot"></div>
               </h2>
               <hgroup id="site-title">
-                <h1 class="name">allenc</h1>
+                <h1 class="name">
+                  <span class="domain">allenc</span><span class="tld">.com</span>
+                </h1>
                 <h2 class="description"><?php bloginfo("description"); ?></h2>
               </hgroup>
             </a>

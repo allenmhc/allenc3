@@ -7,8 +7,6 @@
 $color-title-icon: $color-yellow;
 #title-icon {
   font-weight: 400;
-  padding: 0.2rem 0.5rem;
-  color: $color-title-icon;
   line-height: 0;
   border: 3px solid $color-title-icon;
   @include border-radius(6px);
@@ -18,10 +16,16 @@ $color-title-icon: $color-yellow;
   height: 24px;
   font-size: 36px;
 
-  .dot { position: absolute; }
-  .dot.first { top: 2px; right: 0px; }
-  .dot.second { bottom: 8px; left: 0px; }
-  .dot.third { bottom: 8px; right: 0px; }
+  .dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: $color-title-icon;
+    @include border-radius(3px);
+  }
+  .dot.first { top: 2px; right: 2px; }
+  .dot.second { bottom: 2px; left: 2px; }
+  .dot.third { bottom: 2px; right: 2px; }
 }
 
 #site-title {
@@ -36,6 +40,10 @@ $color-title-icon: $color-yellow;
     font-weight: 400;
     font-size: 28px;
     text-transform: uppercase;
+    .tld {
+      font-weight: 100;
+      font-size: 14px;
+    }
   }
   .description {
     color: $color-white-dark;
