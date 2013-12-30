@@ -51,37 +51,21 @@ $color-title-icon: $color-yellow;
   text-decoration: none;
 }
 
-#social-icons {
-  .social-icon {
-    margin-left: 0.3rem;
-
+#site-nav {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+  list-style: none;
+  font-family: $header-font-family;
+  font-weight: 300;
+  font-size: 18px;
+  .site-nav-item {
+    display: inline-block;
+    margin: 0 0.5rem;
     a {
-      $color-social-icon: $color-white-dark;
-      @include transition(color 0.2s linear);
-      text-decoration: none;
-      display: block;
-      width: 40px;
-      height: 40px;
-      padding: 4px 7px;
-      border: 2px solid $color-social-icon;
-      color: $color-social-icon;
-      @include border-radius(6px);
-      &:before {
-        font: 130%/1.35 zocial;
-        font-style: normal;
-        font-weight: normal;
-        display: inline-block;
-      }
+      color: $color-turq;
+      &:hover { color: lighten($color-turq, 10%); }
+      &:active { color: $color-turq-dark; }
     }
-
-    span {
-      display: none;
-    }
-
-    @include social-icon-content-color("twitter", "T", $color-twitter);
-    @include social-icon-content-color("googleplus", "+", $color-googleplus);
-    @include social-icon-content-color("linkedin", "L", $color-linkedin);
-    @include social-icon-content-color("quora", "q", $color-quora);
-    @include social-icon-content-color("github", "\00E8", $color-github);
   }
 }

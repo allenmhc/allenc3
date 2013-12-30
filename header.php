@@ -46,7 +46,21 @@
           </div>
 
           <nav class="medium-6 column">
-
+            <div class="row">
+            <ul id="site-nav" class="small-12 small-centered large-8 large-offset-4 column">
+              <li class="site-nav-item">
+                <?php nav_link("home") ?>home</a>
+              </li>
+              <li class="site-nav-item">
+                <?php nav_link("articles") ?>articles</a>
+              </li>
+              <li class="site-nav-item">
+                <?php nav_link("archives") ?>archives</a>
+              </li>
+              <li class="site-nav-item">
+                <?php nav_link("about") ?>about</a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
