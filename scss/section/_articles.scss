@@ -1,21 +1,73 @@
 @import "compass/css3";
 @import "foundation/components/grid";
 
-.articles.row {
-  margin-top: 1.5em;
+$color-sidebar: $color-turq;
+.article-box {
+  h3, h4, h5, h6 {
+    font-family: $title-font-family;
+    color: $color-navy;
+  }
+  text-decoration: none;
+  color: lighten(black, 10%);
+  overflow: hidden;
+  display: block;
+  height: 200px;
+  @media #{$small-only} { height: 400px; }
+}
 
+$dot-size: 32px;
+.article-label {
+  background-color: $color-sidebar;
+  height: 100%;
+  position: relative;
+  .dot-mask, .dot, label {
+    position: absolute;
+  }
+  .dot-mask {
+    width: $dot-size + 6;
+    height: $dot-size + 6;
+    top: 20px - 3px;
+    right: -($dot-size + 6) / 2;
+    background-color: $color-white;
+    @include border-radius(($dot-size + 6) / 2);
+  }
+  .dot {
+    width: $dot-size;
+    height: $dot-size;
+    top: 20px;
+    right: -$dot-size / 2;
+    background-color: $color-sidebar;
+    @include border-radius($dot-size/2);
+  }
+  .icomoon-icon {
+    color: $color-white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  label {
+    font-family: $header-font-family;
+    font-size: rem-calc(16);
+    text-align: right;
+    color: $color-white;
+    top: 20px + 8px;
+    right: 25px;
+  }
+}
+
+#featured-article {
+  .post-content {
+    padding-top: 10px;
+  }
+}
+
+.articles.row {
   $excerpt-height: 60px;
 
   ul.posts-list {
     .post-box-outer {
       display: block;
       float: left;
-
-      &.post-box-0 { @include grid-column(12); }
-      &.post-box-1, &.post-box-2, &.post-box-odd, &.post-box-even {
-        @include grid-column(12);
-        @media #{$large-up} { @include grid-column(6); }
-      }
     }
 
     a.post-box {
@@ -25,18 +77,6 @@
       vertical-align: top;
       overflow: hidden;
       margin-bottom: 1.5em;
-
-      &:hover, &:active {
-        .post-separator { background-color: rgba($color-ter, 0.8); }
-      }
-      &:active {
-        .post-title { padding-top: 1px; }
-        .post-separator { margin-bottom: -1px; }
-      }
-    }
-
-    .post-box-inner {
-      overflow: hidden;
     }
 
     .post-date {

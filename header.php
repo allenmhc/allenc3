@@ -62,4 +62,4 @@
     </div>
   </header>
 
-  <div id="content" class="row">
+  <div id="content">
