@@ -1,56 +1,6 @@
 @import "foundation/components/grid";
 
-.archives.row,
-.search-results,
-.related-posts {
-  .posts-list {
-  }
-
-  a.post-line {
-    text-decoration: none;
-    display: block;
-    position: relative;
-    padding: 0.3rem 0 0.3rem 1rem;
-
-    &:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 1px;
-      height: 100%;
-      display: block;
-      background-color: rgba($color-ter, 0.7);
-      content: "";
-    }
-
-    &:hover {
-      &:before {
-        left: -1px;
-        width: 3px;
-        background-color: rgba($color-ter, 0.9);
-      }
-    }
-    &:active {
-      margin-top: 1px;
-      margin-bottom: -1px;
-    }
-  }
-
-  .archive-date {
-    font-family: $code-font-family;
-    vertical-align: top;
-    line-height: 1;
-    display: block;
-    margin: 0;
-    time {
-      color: $color-sec;
-    }
-  }
-
-  .post-title {
-    font-family: $title-font-family;
-    letter-spacing: 1px;
-    color: black(0.8);
-    margin-top: 0;
-  }
+$color-sidebar: $color-purple;
+.archives-label {
+  height: 60px;
 }

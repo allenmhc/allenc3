@@ -9291,106 +9291,20 @@ h2 {
     height: 300px;
   }
 }
-/* line 19, ../scss/section/_articles.scss */
-.article-box:hover .article-label {
-  background-color: #1dd2af;
-}
-/* line 20, ../scss/section/_articles.scss */
-.article-box:hover .dot {
-  background-color: #1dd2af;
-}
-/* line 21, ../scss/section/_articles.scss */
-.article-box:hover .article-title {
-  border-bottom-color: #1dd2af;
-}
-/* line 24, ../scss/section/_articles.scss */
-.article-box:active .article-label {
-  background-color: #17a689;
-}
-/* line 25, ../scss/section/_articles.scss */
-.article-box:active .dot {
-  background-color: #17a689;
-}
-/* line 26, ../scss/section/_articles.scss */
-.article-box:active .article-title {
-  border-bottom-color: #17a689;
-}
-
-/* line 31, ../scss/section/_articles.scss */
-.article-label {
-  background-color: #1abc9c;
-  -webkit-transition: background-color 0.2s linear;
-  -moz-transition: background-color 0.2s linear;
-  -o-transition: background-color 0.2s linear;
-  transition: background-color 0.2s linear;
-  height: 100%;
-  position: relative;
-}
-/* line 36, ../scss/section/_articles.scss */
-.article-label .dot-mask, .article-label .dot, .article-label label {
-  position: absolute;
-}
-/* line 39, ../scss/section/_articles.scss */
-.article-label .dot-mask {
-  width: 38px;
-  height: 38px;
-  top: 17px;
-  right: -19px;
-  background-color: #ecf0f1;
-  -webkit-border-radius: 19px;
-  -moz-border-radius: 19px;
-  -ms-border-radius: 19px;
-  -o-border-radius: 19px;
-  border-radius: 19px;
-}
-/* line 47, ../scss/section/_articles.scss */
-.article-label .dot {
-  width: 32px;
-  height: 32px;
-  top: 20px;
-  right: -16px;
-  background-color: #1abc9c;
-  -webkit-transition: background-color 0.2s linear;
-  -moz-transition: background-color 0.2s linear;
-  -o-transition: background-color 0.2s linear;
-  transition: background-color 0.2s linear;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
-  border-radius: 16px;
-}
-/* line 56, ../scss/section/_articles.scss */
-.article-label .icomoon-icon {
-  color: #ecf0f1;
-  font-size: 20px;
-  text-align: center;
-  line-height: 1.6;
-}
-/* line 62, ../scss/section/_articles.scss */
-.article-label label {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 1rem;
-  text-align: right;
-  color: #ecf0f1;
-  top: 28px;
-  right: 25px;
-}
-
-/* line 73, ../scss/section/_articles.scss */
-.article-box .post-content {
+/* line 18, ../scss/section/_articles.scss */
+.article-box .article-content {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 25px;
   height: 100%;
 }
-/* line 78, ../scss/section/_articles.scss */
-.article-box .post-content .post-content-inner {
+/* line 23, ../scss/section/_articles.scss */
+.article-box .article-content .article-content-inner {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-/* line 85, ../scss/section/_articles.scss */
+/* line 30, ../scss/section/_articles.scss */
 .article-box .article-title {
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
@@ -9401,120 +9315,39 @@ h2 {
   -o-transition: border-color 0.2s linear;
   transition: border-color 0.2s linear;
 }
-/* line 93, ../scss/section/_articles.scss */
+/* line 38, ../scss/section/_articles.scss */
 .article-box .article-excerpt p {
   color: #95a5a6;
   line-height: 1.4;
 }
-
-/* line 103, ../scss/section/_articles.scss */
-.articles.row ul.posts-list .post-box-outer {
-  display: block;
-  float: left;
+/* line 44, ../scss/section/_articles.scss */
+.article-box:hover .article-label {
+  background-color: #1dd2af;
 }
-/* line 108, ../scss/section/_articles.scss */
-.articles.row ul.posts-list a.post-box {
-  text-decoration: none;
-  position: relative;
-  display: block;
-  vertical-align: top;
-  overflow: hidden;
-  margin-bottom: 1.5em;
+/* line 45, ../scss/section/_articles.scss */
+.article-box:hover .dot {
+  background-color: #1dd2af;
 }
-/* line 117, ../scss/section/_articles.scss */
-.articles.row ul.posts-list .post-date {
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  font-size: 12px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
-  font-family: "Inconsolata", "Andale Mono", "Courier New", "Courier", monospace;
-  display: none;
+/* line 46, ../scss/section/_articles.scss */
+.article-box:hover .article-title {
+  border-bottom-color: #1dd2af;
 }
-/* line 128, ../scss/section/_articles.scss */
-.articles.row ul.posts-list .post-title {
-  vertical-align: top;
-  overflow: hidden;
-  color: rgba(0, 0, 0, 0.8);
-  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
-  letter-spacing: 1px;
+/* line 49, ../scss/section/_articles.scss */
+.article-box:active .article-label {
+  background-color: #17a689;
 }
-/* line 136, ../scss/section/_articles.scss */
-.articles.row ul.posts-list .post-separator {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(100, 193, 159, 0.6);
+/* line 50, ../scss/section/_articles.scss */
+.article-box:active .dot {
+  background-color: #17a689;
 }
-/* line 143, ../scss/section/_articles.scss */
-.articles.row ul.posts-list .post-excerpt p {
-  line-height: 1.4;
-  color: rgba(0, 0, 0, 0.5);
-  margin: 0.5em 0;
-  max-height: 60px;
+/* line 51, ../scss/section/_articles.scss */
+.article-box:active .article-title {
+  border-bottom-color: #17a689;
 }
 
-/* line 9, ../scss/section/_archives.scss */
-.archives.row a.post-line,
-.search-results a.post-line,
-.related-posts a.post-line {
-  text-decoration: none;
-  display: block;
-  position: relative;
-  padding: 0.3rem 0 0.3rem 1rem;
-}
-/* line 15, ../scss/section/_archives.scss */
-.archives.row a.post-line:before,
-.search-results a.post-line:before,
-.related-posts a.post-line:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  display: block;
-  background-color: rgba(100, 193, 159, 0.7);
-  content: "";
-}
-/* line 27, ../scss/section/_archives.scss */
-.archives.row a.post-line:hover:before,
-.search-results a.post-line:hover:before,
-.related-posts a.post-line:hover:before {
-  left: -1px;
-  width: 3px;
-  background-color: rgba(100, 193, 159, 0.9);
-}
-/* line 33, ../scss/section/_archives.scss */
-.archives.row a.post-line:active,
-.search-results a.post-line:active,
-.related-posts a.post-line:active {
-  margin-top: 1px;
-  margin-bottom: -1px;
-}
-/* line 39, ../scss/section/_archives.scss */
-.archives.row .archive-date,
-.search-results .archive-date,
-.related-posts .archive-date {
-  font-family: "Inconsolata", "Andale Mono", "Courier New", "Courier", monospace;
-  vertical-align: top;
-  line-height: 1;
-  display: block;
-  margin: 0;
-}
-/* line 45, ../scss/section/_archives.scss */
-.archives.row .archive-date time,
-.search-results .archive-date time,
-.related-posts .archive-date time {
-  color: #8a783b;
-}
-/* line 50, ../scss/section/_archives.scss */
-.archives.row .post-title,
-.search-results .post-title,
-.related-posts .post-title {
-  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
-  letter-spacing: 1px;
-  color: rgba(0, 0, 0, 0.8);
-  margin-top: 0;
+/* line 4, ../scss/section/_archives.scss */
+.archives-label {
+  height: 60px;
 }
 
 /* line 1, ../scss/section/_footer.scss */
@@ -9643,27 +9476,166 @@ h2 {
   background-color: #e2e2e2;
 }
 
-/* line 2, ../scss/page/_home.scss */
-.article-box .post-content {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 25px;
+/* line 46, ../scss/page/_home.scss */
+#featured-article .article-label {
+  background-color: #1abc9c;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  position: relative;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
   height: 100%;
 }
-/* line 7, ../scss/page/_home.scss */
-.article-box .post-content .post-content-inner {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+/* line 13, ../scss/page/_home.scss */
+#featured-article .article-label .dot, #featured-article .article-label .dot-mask, #featured-article .article-label .dot-icon, #featured-article .article-label label {
+  position: absolute;
 }
 /* line 14, ../scss/page/_home.scss */
-.article-box .article-title {
-  padding-bottom: 0.3rem;
-  margin-bottom: 1rem;
-  color: #34495e;
+#featured-article .article-label .dot {
+  width: 100%;
+  height: 100%;
 }
-/* line 20, ../scss/page/_home.scss */
-.article-box .article-excerpt p {
-  color: #95a5a6;
-  line-height: 1.4;
+/* line 18, ../scss/page/_home.scss */
+#featured-article .article-label .dot-mask {
+  width: 38px;
+  height: 38px;
+  background-color: #ecf0f1;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  -ms-border-radius: 19px;
+  -o-border-radius: 19px;
+  border-radius: 19px;
+}
+/* line 24, ../scss/page/_home.scss */
+#featured-article .article-label .dot-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #1abc9c;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border-radius: 16px;
+}
+/* line 31, ../scss/page/_home.scss */
+#featured-article .article-label .icomoon-icon {
+  color: #ecf0f1;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+/* line 37, ../scss/page/_home.scss */
+#featured-article .article-label label {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+  text-align: right;
+  color: #ecf0f1;
+}
+/* line 49, ../scss/page/_home.scss */
+#featured-article .article-label .dot {
+  top: 20px;
+  right: 0;
+}
+/* line 52, ../scss/page/_home.scss */
+#featured-article .article-label .dot .dot-mask {
+  top: 0;
+  right: -19px;
+}
+/* line 53, ../scss/page/_home.scss */
+#featured-article .article-label .dot .dot-icon {
+  top: 3px;
+  right: -16px;
+}
+/* line 54, ../scss/page/_home.scss */
+#featured-article .article-label .dot label {
+  top: 8px;
+  right: 25px;
+}
+
+/* line 60, ../scss/page/_home.scss */
+#more-posts .archives-label {
+  background-color: #9b59b6;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  position: relative;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  height: 58px;
+}
+/* line 13, ../scss/page/_home.scss */
+#more-posts .archives-label .dot, #more-posts .archives-label .dot-mask, #more-posts .archives-label .dot-icon, #more-posts .archives-label label {
+  position: absolute;
+}
+/* line 14, ../scss/page/_home.scss */
+#more-posts .archives-label .dot {
+  width: 100%;
+  height: 100%;
+}
+/* line 18, ../scss/page/_home.scss */
+#more-posts .archives-label .dot-mask {
+  width: 38px;
+  height: 38px;
+  background-color: #ecf0f1;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  -ms-border-radius: 19px;
+  -o-border-radius: 19px;
+  border-radius: 19px;
+}
+/* line 24, ../scss/page/_home.scss */
+#more-posts .archives-label .dot-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #9b59b6;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border-radius: 16px;
+}
+/* line 31, ../scss/page/_home.scss */
+#more-posts .archives-label .icomoon-icon {
+  color: #ecf0f1;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+/* line 37, ../scss/page/_home.scss */
+#more-posts .archives-label label {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+  text-align: right;
+  color: #ecf0f1;
+}
+/* line 64, ../scss/page/_home.scss */
+#more-posts .archives-label .dot {
+  top: 10px;
+  left: 0;
+}
+/* line 67, ../scss/page/_home.scss */
+#more-posts .archives-label .dot .dot-mask {
+  top: 0;
+  left: -19px;
+}
+/* line 68, ../scss/page/_home.scss */
+#more-posts .archives-label .dot .dot-icon {
+  top: 3px;
+  left: -16px;
+}
+/* line 69, ../scss/page/_home.scss */
+#more-posts .archives-label .dot label {
+  top: 8px;
+  left: 25px;
 }

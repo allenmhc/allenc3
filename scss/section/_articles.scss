@@ -15,67 +15,12 @@ $color-sidebar: $color-turq;
   height: 200px;
   @media #{$small-only} { height: 300px; }
 
-  &:hover {
-    .article-label { background-color: color-hover($color-sidebar); }
-    .dot { background-color: color-hover($color-sidebar); }
-    .article-title { border-bottom-color: color-hover($color-sidebar); }
-  }
-  &:active {
-    .article-label { background-color: color-active($color-sidebar); }
-    .dot { background-color: color-active($color-sidebar); }
-    .article-title { border-bottom-color: color-active($color-sidebar); }
-  }
-}
-
-$dot-size: 32px;
-.article-label {
-  background-color: $color-sidebar;
-  @include transition(background-color 0.2s linear);
-  height: 100%;
-  position: relative;
-  .dot-mask, .dot, label {
-    position: absolute;
-  }
-  .dot-mask {
-    width: $dot-size + 6;
-    height: $dot-size + 6;
-    top: 20px - 3px;
-    right: -($dot-size + 6) / 2;
-    background-color: $color-white;
-    @include border-radius(($dot-size + 6) / 2);
-  }
-  .dot {
-    width: $dot-size;
-    height: $dot-size;
-    top: 20px;
-    right: -$dot-size / 2;
-    background-color: $color-sidebar;
-    @include transition(background-color 0.2s linear);
-    @include border-radius($dot-size/2);
-  }
-  .icomoon-icon {
-    color: $color-white;
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.6;
-  }
-  label {
-    font-family: $header-font-family;
-    font-size: rem-calc(16);
-    text-align: right;
-    color: $color-white;
-    top: 20px + 8px;
-    right: 25px;
-  }
-}
-
-.article-box {
-  .post-content {
+  .article-content {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 25px;
     height: 100%;
-    .post-content-inner {
+    .article-content-inner {
       width: 100%;
       height: 100%;
       overflow: hidden;
@@ -94,58 +39,16 @@ $dot-size: 32px;
     color: $color-grey;
     line-height: 1.4;
   }
-}
 
-.articles.row {
-  $excerpt-height: 60px;
-
-  ul.posts-list {
-    .post-box-outer {
-      display: block;
-      float: left;
-    }
-
-    a.post-box {
-      text-decoration: none;
-      position: relative;
-      display: block;
-      vertical-align: top;
-      overflow: hidden;
-      margin-bottom: 1.5em;
-    }
-
-    .post-date {
-      position: absolute;
-      top: 10px;
-      left: 15px;
-      font-size: 12px;
-      font-weight: 300;
-      color: white(0.8);
-      font-family: $code-font-family;
-      display: none;
-    }
-
-    .post-title {
-      vertical-align: top;
-      overflow: hidden;
-      color: black(0.8);
-      font-family: $title-font-family;
-      letter-spacing: 1px;
-    }
-
-    .post-separator {
-      width: 100%;
-      height: 1px;
-      background-color: rgba($color-ter, 0.6);
-    }
-
-    .post-excerpt {
-      p {
-        line-height: 1.4;
-        color: black(0.5);
-        margin: 0.5em 0;
-        max-height: $excerpt-height;
-      }
-    }
+  &:hover {
+    .article-label { background-color: color-hover($color-sidebar); }
+    .dot { background-color: color-hover($color-sidebar); }
+    .article-title { border-bottom-color: color-hover($color-sidebar); }
   }
+  &:active {
+    .article-label { background-color: color-active($color-sidebar); }
+    .dot { background-color: color-active($color-sidebar); }
+    .article-title { border-bottom-color: color-active($color-sidebar); }
+  }
+
 }
