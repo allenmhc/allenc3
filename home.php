@@ -19,7 +19,7 @@ global $wp_query;
   query_posts($query_args);
   the_post();
   ?>
-  <a href="<?php the_permalink(); ?>" class="post-box article-box row">
+  <a href="<?php the_permalink(); ?>" class="article-box row">
     <div class="article-label small-3 medium-4 column">
       <aside class="dot">
         <div class="dot-mask"></div>
@@ -48,20 +48,28 @@ global $wp_query;
     </div>
   </div>
 
-  <div class="row archives-list">
-    <?php
-    rewind_posts();
-    $query_args = array(
-      "posts_per_page" => 10
-    );
-    query_posts($query_args);
-    while (have_posts()): the_post();
-    ?>
-    <a href="<?php the_permalink(); ?>" class="post-box small-12 medium-4 large-3 column">
-      <div class="post-date archive-date"><?php the_time("Y.m.d"); ?></div>
-      <span class="post-title archive-title"><?php the_title(); ?></span>
-    </a>
-    <?php endwhile; ?>
+  <div class="row">
+    <div class="archives-list-wrapper column">
+      <ul class="archives-list small-block-grid-2 medium-block-grid-4 large-block-grid-6">
+        <?php
+        rewind_posts();
+        $query_args = array(
+          "posts_per_page" => 12
+        );
+        query_posts($query_args);
+        while (have_posts()): the_post();
+        ?>
+        <li>
+          <a href="<?php the_permalink(); ?>" class="archive-box">
+            <div class="archive-box-inner">
+              <div class="archive-date"><?php the_time("Y.m.d"); ?></div>
+              <h4 class="archive-title"><?php the_title(); ?></h4>
+            </div>
+          </a>
+        </li>
+      <?php endwhile; ?>
+      </ul>
+    </div>
   </div>
 </section>
 
