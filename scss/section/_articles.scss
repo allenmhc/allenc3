@@ -39,16 +39,17 @@ $color-sidebar: $color-turq;
     color: $color-grey;
     line-height: 1.4;
   }
+}
 
+#featured-article .article-box {
   &:hover {
     .article-label { background-color: color-hover($color-sidebar); }
-    .dot { background-color: color-hover($color-sidebar); }
+    .dot-icon { background-color: color-hover($color-sidebar); }
     .article-title { border-bottom-color: color-hover($color-sidebar); }
   }
   &:active {
     .article-label { background-color: color-active($color-sidebar); }
-    .dot { background-color: color-active($color-sidebar); }
+    .dot-icon { background-color: color-active($color-sidebar); }
     .article-title { border-bottom-color: color-active($color-sidebar); }
   }
-
 }

@@ -9320,28 +9320,29 @@ h2 {
   color: #95a5a6;
   line-height: 1.4;
 }
-/* line 44, ../scss/section/_articles.scss */
-.article-box:hover .article-label {
-  background-color: #1dd2af;
-}
-/* line 45, ../scss/section/_articles.scss */
-.article-box:hover .dot {
-  background-color: #1dd2af;
-}
+
 /* line 46, ../scss/section/_articles.scss */
-.article-box:hover .article-title {
+#featured-article .article-box:hover .article-label {
+  background-color: #1dd2af;
+}
+/* line 47, ../scss/section/_articles.scss */
+#featured-article .article-box:hover .dot-icon {
+  background-color: #1dd2af;
+}
+/* line 48, ../scss/section/_articles.scss */
+#featured-article .article-box:hover .article-title {
   border-bottom-color: #1dd2af;
 }
-/* line 49, ../scss/section/_articles.scss */
-.article-box:active .article-label {
-  background-color: #17a689;
-}
-/* line 50, ../scss/section/_articles.scss */
-.article-box:active .dot {
-  background-color: #17a689;
-}
 /* line 51, ../scss/section/_articles.scss */
-.article-box:active .article-title {
+#featured-article .article-box:active .article-label {
+  background-color: #17a689;
+}
+/* line 52, ../scss/section/_articles.scss */
+#featured-article .article-box:active .dot-icon {
+  background-color: #17a689;
+}
+/* line 53, ../scss/section/_articles.scss */
+#featured-article .article-box:active .article-title {
   border-bottom-color: #17a689;
 }
 
