@@ -25,10 +25,11 @@ global $wp_query;
       <div class="dot icomoon-icon icon-paste"></div>
       <label>latest article</label>
     </div>
-    <div class="post-content small-8 small-offset-1 medium-7 column">
-      <h3 class="post-title article-title"><?php the_title(); ?></h3>
-      <div class="post-separator"></div>
-      <div class="post-excerpt article-excerpt"><?php the_excerpt(); ?></div>
+    <div class="post-content small-9 medium-8 column">
+      <div class="post-content-inner">
+        <h3 class="post-title article-title"><?php the_title(); ?></h3>
+        <div class="post-excerpt article-excerpt"><?php the_excerpt(); ?></div>
+      </div>
     </div>
   </a>
 </section>

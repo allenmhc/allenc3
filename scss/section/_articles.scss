@@ -5,6 +5,7 @@ $color-sidebar: $color-turq;
 .article-box {
   h3, h4, h5, h6 {
     font-family: $title-font-family;
+    font-weight: 400;
     color: $color-navy;
   }
   text-decoration: none;
@@ -12,12 +13,24 @@ $color-sidebar: $color-turq;
   overflow: hidden;
   display: block;
   height: 200px;
-  @media #{$small-only} { height: 400px; }
+  @media #{$small-only} { height: 300px; }
+
+  &:hover {
+    .article-label { background-color: color-hover($color-sidebar); }
+    .dot { background-color: color-hover($color-sidebar); }
+    .article-title { border-bottom-color: color-hover($color-sidebar); }
+  }
+  &:active {
+    .article-label { background-color: color-active($color-sidebar); }
+    .dot { background-color: color-active($color-sidebar); }
+    .article-title { border-bottom-color: color-active($color-sidebar); }
+  }
 }
 
 $dot-size: 32px;
 .article-label {
   background-color: $color-sidebar;
+  @include transition(background-color 0.2s linear);
   height: 100%;
   position: relative;
   .dot-mask, .dot, label {
@@ -37,6 +50,7 @@ $dot-size: 32px;
     top: 20px;
     right: -$dot-size / 2;
     background-color: $color-sidebar;
+    @include transition(background-color 0.2s linear);
     @include border-radius($dot-size/2);
   }
   .icomoon-icon {
@@ -55,9 +69,30 @@ $dot-size: 32px;
   }
 }
 
-#featured-article {
+.article-box {
   .post-content {
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    height: 100%;
+    .post-content-inner {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .article-title {
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    color: $color-navy;
+    border-bottom: 1px solid $color-sidebar;
+    @include transition(border-color 0.2s linear);
+  }
+
+  .article-excerpt p {
+    color: $color-grey;
+    line-height: 1.4;
   }
 }
 

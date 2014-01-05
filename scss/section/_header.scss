@@ -79,8 +79,8 @@ $color-title-icon: $color-yellow;
   .site-nav-item {
     margin: 5px -5px;
     color: $color-nav;
-    &:hover { color: lighten($color-nav, 10%); }
-    &:active { color: darken($color-nav, 10%); }
+    &:hover { color: color-hover($color-nav); }
+    &:active { color: color-active($color-nav); }
     &:first-of-type { text-align: right; }
     &:last-of-type { text-align: left; }
     &.active {

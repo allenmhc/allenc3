@@ -44,3 +44,11 @@
 @function white($opacity) {
   @return rgba(255, 255, 255, $opacity);
 }
+
+@function color-hover($color) {
+  @return lighten($color, 5%);
+}
+
+@function color-active($color) {
+  @return darken($color, 5%);
+}

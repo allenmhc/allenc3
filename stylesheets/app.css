@@ -7370,7 +7370,7 @@ h2 {
 
 /* line 201, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h3 {
-  font-size: 1.1875rem;
+  font-size: 1.0625rem;
 }
 
 /* line 202, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -7605,7 +7605,7 @@ blockquote p {
 
   /* line 382, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 
   /* line 383, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -9213,11 +9213,11 @@ h2 {
 }
 /* line 82, ../scss/section/_header.scss */
 #site-nav .site-nav-item:hover {
-  color: #ed7669;
+  color: #ea6153;
 }
 /* line 83, ../scss/section/_header.scss */
 #site-nav .site-nav-item:active {
-  color: #d62c1a;
+  color: #e43725;
 }
 /* line 84, ../scss/section/_header.scss */
 #site-nav .site-nav-item:first-of-type {
@@ -9281,27 +9281,56 @@ h2 {
 }
 /* line 6, ../scss/section/_articles.scss */
 .article-box h3, .article-box h4, .article-box h5, .article-box h6 {
-  font-family: "Roboto Slab", Georgia, serif;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+  font-weight: 400;
   color: #34495e;
 }
 @media only screen and (max-width: 40em) {
   /* line 5, ../scss/section/_articles.scss */
   .article-box {
-    height: 400px;
+    height: 300px;
   }
 }
-
 /* line 19, ../scss/section/_articles.scss */
+.article-box:hover .article-label {
+  background-color: #1dd2af;
+}
+/* line 20, ../scss/section/_articles.scss */
+.article-box:hover .dot {
+  background-color: #1dd2af;
+}
+/* line 21, ../scss/section/_articles.scss */
+.article-box:hover .article-title {
+  border-bottom-color: #1dd2af;
+}
+/* line 24, ../scss/section/_articles.scss */
+.article-box:active .article-label {
+  background-color: #17a689;
+}
+/* line 25, ../scss/section/_articles.scss */
+.article-box:active .dot {
+  background-color: #17a689;
+}
+/* line 26, ../scss/section/_articles.scss */
+.article-box:active .article-title {
+  border-bottom-color: #17a689;
+}
+
+/* line 31, ../scss/section/_articles.scss */
 .article-label {
   background-color: #1abc9c;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
   height: 100%;
   position: relative;
 }
-/* line 23, ../scss/section/_articles.scss */
+/* line 36, ../scss/section/_articles.scss */
 .article-label .dot-mask, .article-label .dot, .article-label label {
   position: absolute;
 }
-/* line 26, ../scss/section/_articles.scss */
+/* line 39, ../scss/section/_articles.scss */
 .article-label .dot-mask {
   width: 38px;
   height: 38px;
@@ -9314,27 +9343,31 @@ h2 {
   -o-border-radius: 19px;
   border-radius: 19px;
 }
-/* line 34, ../scss/section/_articles.scss */
+/* line 47, ../scss/section/_articles.scss */
 .article-label .dot {
   width: 32px;
   height: 32px;
   top: 20px;
   right: -16px;
   background-color: #1abc9c;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
   border-radius: 16px;
 }
-/* line 42, ../scss/section/_articles.scss */
+/* line 56, ../scss/section/_articles.scss */
 .article-label .icomoon-icon {
   color: #ecf0f1;
   font-size: 20px;
   text-align: center;
   line-height: 1.6;
 }
-/* line 48, ../scss/section/_articles.scss */
+/* line 62, ../scss/section/_articles.scss */
 .article-label label {
   font-family: "Lato", Arial, sans-serif;
   font-size: 1rem;
@@ -9344,17 +9377,42 @@ h2 {
   right: 25px;
 }
 
-/* line 59, ../scss/section/_articles.scss */
-#featured-article .post-content {
-  padding-top: 10px;
+/* line 73, ../scss/section/_articles.scss */
+.article-box .post-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  height: 100%;
+}
+/* line 78, ../scss/section/_articles.scss */
+.article-box .post-content .post-content-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 85, ../scss/section/_articles.scss */
+.article-box .article-title {
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+  border-bottom: 1px solid #1abc9c;
+  -webkit-transition: border-color 0.2s linear;
+  -moz-transition: border-color 0.2s linear;
+  -o-transition: border-color 0.2s linear;
+  transition: border-color 0.2s linear;
+}
+/* line 93, ../scss/section/_articles.scss */
+.article-box .article-excerpt p {
+  color: #95a5a6;
+  line-height: 1.4;
 }
 
-/* line 68, ../scss/section/_articles.scss */
+/* line 103, ../scss/section/_articles.scss */
 .articles.row ul.posts-list .post-box-outer {
   display: block;
   float: left;
 }
-/* line 73, ../scss/section/_articles.scss */
+/* line 108, ../scss/section/_articles.scss */
 .articles.row ul.posts-list a.post-box {
   text-decoration: none;
   position: relative;
@@ -9363,7 +9421,7 @@ h2 {
   overflow: hidden;
   margin-bottom: 1.5em;
 }
-/* line 82, ../scss/section/_articles.scss */
+/* line 117, ../scss/section/_articles.scss */
 .articles.row ul.posts-list .post-date {
   position: absolute;
   top: 10px;
@@ -9374,21 +9432,21 @@ h2 {
   font-family: "Inconsolata", "Andale Mono", "Courier New", "Courier", monospace;
   display: none;
 }
-/* line 93, ../scss/section/_articles.scss */
+/* line 128, ../scss/section/_articles.scss */
 .articles.row ul.posts-list .post-title {
   vertical-align: top;
   overflow: hidden;
   color: rgba(0, 0, 0, 0.8);
-  font-family: "Roboto Slab", Georgia, serif;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   letter-spacing: 1px;
 }
-/* line 101, ../scss/section/_articles.scss */
+/* line 136, ../scss/section/_articles.scss */
 .articles.row ul.posts-list .post-separator {
   width: 100%;
   height: 1px;
   background-color: rgba(100, 193, 159, 0.6);
 }
-/* line 108, ../scss/section/_articles.scss */
+/* line 143, ../scss/section/_articles.scss */
 .articles.row ul.posts-list .post-excerpt p {
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.5);
@@ -9453,7 +9511,7 @@ h2 {
 .archives.row .post-title,
 .search-results .post-title,
 .related-posts .post-title {
-  font-family: "Roboto Slab", Georgia, serif;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   letter-spacing: 1px;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 0;
@@ -9583,4 +9641,29 @@ h2 {
 /* line 14, ../scss/section/_footer.scss */
 #social-icons .social-icon a.github:active {
   background-color: #e2e2e2;
+}
+
+/* line 2, ../scss/page/_home.scss */
+.article-box .post-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  height: 100%;
+}
+/* line 7, ../scss/page/_home.scss */
+.article-box .post-content .post-content-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 14, ../scss/page/_home.scss */
+.article-box .article-title {
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+/* line 20, ../scss/page/_home.scss */
+.article-box .article-excerpt p {
+  color: #95a5a6;
+  line-height: 1.4;
 }

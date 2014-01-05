@@ -34,12 +34,12 @@ function allenc_get_bookend_post_date($is_first, $is_article) {
 
 /* Filters */
 function new_excerpt_length($length) {
-	return 70;
+	return 80;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
 
 function new_excerpt_more($more) {
-	return '';
+	return '…';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
