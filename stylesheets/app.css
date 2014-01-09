@@ -1347,43 +1347,18 @@ button:-moz-focus-inner {
 }
 
 /* line 26, ../scss/lib/_icomoon.scss */
-.icon-paste:before {
-  content: "\e600";
+.icon-book:before {
+  content: "\e61f";
 }
 
 /* line 29, ../scss/lib/_icomoon.scss */
-.icon-book:before {
-  content: "\e601";
+.icon-copy:before {
+  content: "\e629";
 }
 
 /* line 32, ../scss/lib/_icomoon.scss */
-.icon-copy:before {
-  content: "\e602";
-}
-
-/* line 35, ../scss/lib/_icomoon.scss */
-.icon-home:before {
-  content: "\e603";
-}
-
-/* line 38, ../scss/lib/_icomoon.scss */
-.icon-profile:before {
-  content: "\e604";
-}
-
-/* line 41, ../scss/lib/_icomoon.scss */
-.icon-user:before {
-  content: "\e605";
-}
-
-/* line 44, ../scss/lib/_icomoon.scss */
-.icon-cog:before {
-  content: "\e606";
-}
-
-/* line 47, ../scss/lib/_icomoon.scss */
 .icon-calendar:before {
-  content: "\e607";
+  content: "\e64e";
 }
 
 /* line 287, ../bower_components/foundation/scss/foundation/components/_global.scss */
