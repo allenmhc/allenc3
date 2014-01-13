@@ -62,7 +62,9 @@ global $wp_query;
         <li>
           <a href="<?php the_permalink(); ?>" class="archive-box">
             <div class="archive-box-inner">
-              <div class="archive-date icomoon-icon icon-calendar"><?php the_time("Y.m.d"); ?></div>
+              <time class="archive-date">
+                <?php the_time("F jS"); ?>
+              </time>
               <h4 class="archive-title"><?php the_title(); ?></h4>
             </div>
           </a>
