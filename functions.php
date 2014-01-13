@@ -32,6 +32,12 @@ function allenc_get_bookend_post_date($is_first, $is_article) {
   return $post[0]->post_date;
 }
 
+function allenc_archive_box_class($categories) {
+  $cat_count = count($categories);
+  $count_class = ($cat_count >= 1 && $cat_count <= 3) ? $cat_count : "other";
+  echo "archive-box-" . $count_class;
+}
+
 /* Filters */
 function new_excerpt_length($length) {
 	return 80;

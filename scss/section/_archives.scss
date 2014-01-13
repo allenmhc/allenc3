@@ -8,6 +8,12 @@
   padding-right: 0;
 }
 
+@mixin box-colors($color) {
+  background-color: $color;
+  &:hover { background-color: color-hover($color); }
+  &:active { background-color: color-active($color); }
+}
+
 .archive-box {
   h3, h4, h5, h6 {
     font-family: $title-font-family;
@@ -16,8 +22,11 @@
   }
   display: block;
   height: 160px;
-  background-color: $color-red-dark;
+  @include box-colors($color-grey-dark);
 }
+.archive-box-1 { @include box-colors($color-navy); }
+.archive-box-2 { @include box-colors($color-red-dark); }
+.archive-box-3 { @include box-colors($color-orange-dark); }
 
 $color-date: $color-white-dark;
 .archive-box-inner {

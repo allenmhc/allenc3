@@ -60,7 +60,7 @@ global $wp_query;
         while (have_posts()): the_post();
         ?>
         <li>
-          <a href="<?php the_permalink(); ?>" class="archive-box">
+          <a href="<?php the_permalink(); ?>" class="archive-box <?php allenc_archive_box_class(get_the_category()); ?>">
             <div class="archive-box-inner">
               <time class="archive-date">
                 <?php the_time("F jS"); ?>
