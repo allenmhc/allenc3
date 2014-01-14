@@ -23,6 +23,7 @@
   display: block;
   height: 160px;
   @include box-colors($color-grey-dark);
+  @include transition(background-color linear 0.1s);
 }
 .archive-box-1 { @include box-colors($color-navy); }
 .archive-box-2 { @include box-colors($color-red-dark); }
