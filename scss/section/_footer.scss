@@ -1,39 +1,37 @@
 #site-footer {
   background-color: lighten(black, 20%);
   border-top: 3px solid $color-yellow;
-  padding: 15px 0 25px;
+  padding: 30px 0 30px;
 }
 
 @mixin social-icon-content-color($name, $content, $color) {
   a.#{$name} {
     background-color: lighten(black, 20%);
     &:before { content: $content; }
-    &:hover {
-      background-color: $color;
-    }
-    &:active {
-      background-color: darken($color, 10%);
-    }
+    &:hover { background-color: darken($color, 10%); }
+    &:active { background-color: darken($color, 20%); }
   }
 }
 
 #social-icons {
-  width: 230px; // Temporarily centered.
-
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
   .social-icon {
-    margin-left: 0.3rem;
-
     a {
-      $color-social-icon: $color-white-dark;
-      @include transition(color 0.2s linear);
+      $color-social-icon: $color-white;
+      $size-social-icon: 44px;
+      @include transition(background-color 0.2s linear);
       text-decoration: none;
       display: block;
-      width: 40px;
-      height: 40px;
-      padding: 4px 7px;
+      width: $size-social-icon;
+      height: $size-social-icon;
+      margin: 0 auto;
+      padding: 6px 0;
+      text-align: center;
       border: 2px solid $color-social-icon;
       color: $color-social-icon;
-      @include border-radius(6px);
+      @include border-radius($size-social-icon/2);
       &:before {
         font: 130%/1.35 zocial;
         font-style: normal;
@@ -51,5 +49,6 @@
     @include social-icon-content-color("linkedin", "L", $color-linkedin);
     @include social-icon-content-color("quora", "q", $color-quora);
     @include social-icon-content-color("github", "\00E8", $color-github);
+    @include social-icon-content-color("rss", "R", $color-rss);
   }
 }
