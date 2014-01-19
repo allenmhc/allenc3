@@ -16,6 +16,7 @@
 #social-icons {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
   max-width: 350px;
   .social-icon {
     a {
@@ -51,4 +52,54 @@
     @include social-icon-content-color("github", "\00E8", $color-github);
     @include social-icon-content-color("rss", "R", $color-rss);
   }
+}
+
+#searchform {
+  position: relative;
+  max-width: 350px - 15px;
+  margin: 0 auto;
+
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #search-label {
+    background: transparent url(../img/search.png) no-repeat top left;
+    cursor: pointer;
+    display: inline-block;
+    text-indent: -99999px;
+    width: 16px;
+    height: 17px;
+    margin: 0 10px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+
+  #search {
+    background: lighten(black, 25%);
+    @include border-radius(20px);
+    color: $color-white-dark;
+    width: 100%;
+    border: 2px solid $color-white-dark;
+    outline: none;
+    padding: 2px 5px 2px 35px;
+    @include transition(all 0.1s linear);
+    &:focus {
+      color: black(0.75);
+      background: lighten(black, 50%);
+    }
+  }
+
+}
+
+#search-info {
+  font-size: 0.6rem;
+  max-width: 350px - 15px - 20px;
+  text-align: right;
+  margin: -10px auto 10px;
+  line-height: 0;
+  color: $color-white-dark;
 }

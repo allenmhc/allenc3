@@ -9446,9 +9446,10 @@ h2 {
 #social-icons {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
   max-width: 350px;
 }
-/* line 21, ../scss/section/_footer.scss */
+/* line 22, ../scss/section/_footer.scss */
 #social-icons .social-icon a {
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
@@ -9469,14 +9470,14 @@ h2 {
   -o-border-radius: 22px;
   border-radius: 22px;
 }
-/* line 35, ../scss/section/_footer.scss */
+/* line 36, ../scss/section/_footer.scss */
 #social-icons .social-icon a:before {
   font: 130%/1.35 zocial;
   font-style: normal;
   font-weight: normal;
   display: inline-block;
 }
-/* line 43, ../scss/section/_footer.scss */
+/* line 44, ../scss/section/_footer.scss */
 #social-icons .social-icon span {
   display: none;
 }
@@ -9575,6 +9576,65 @@ h2 {
 /* line 12, ../scss/section/_footer.scss */
 #social-icons .social-icon a.rss:active {
   background-color: #be4e00;
+}
+
+/* line 57, ../scss/section/_footer.scss */
+#searchform {
+  position: relative;
+  max-width: 335px;
+  margin: 0 auto;
+}
+/* line 62, ../scss/section/_footer.scss */
+#searchform fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 68, ../scss/section/_footer.scss */
+#searchform #search-label {
+  background: transparent url(../img/search.png) no-repeat top left;
+  cursor: pointer;
+  display: inline-block;
+  text-indent: -99999px;
+  width: 16px;
+  height: 17px;
+  margin: 0 10px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+/* line 81, ../scss/section/_footer.scss */
+#searchform #search {
+  background: #404040;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  color: #bdc3c7;
+  width: 100%;
+  border: 2px solid #bdc3c7;
+  outline: none;
+  padding: 2px 5px 2px 35px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+/* line 90, ../scss/section/_footer.scss */
+#searchform #search:focus {
+  color: rgba(0, 0, 0, 0.75);
+  background: gray;
+}
+
+/* line 98, ../scss/section/_footer.scss */
+#search-info {
+  font-size: 0.6rem;
+  max-width: 315px;
+  text-align: right;
+  margin: -10px auto 10px;
+  line-height: 0;
+  color: #bdc3c7;
 }
 
 /* line 46, ../scss/page/_home.scss */

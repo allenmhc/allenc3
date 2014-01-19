@@ -43,18 +43,26 @@
           </ul>
         </div>
 
-        <div class="medium-6 column" id="search-form">
-          <?php get_search_form(); ?>
+        <div class="medium-6 column" id="search-form-wrapper">
           <?php if (is_search()): ?>
             <?php
             global $wp_query;
             $total_results = $wp_query->found_posts;
             ?>
             <aside id="search-info">
-              <?php echo $total_results; ?> post<?php echo ($total_results == 1) ? "" : "s" ?>
+              <?php echo $total_results; ?> match<?php echo ($total_results == 1) ? "" : "es" ?>
             </aside>
             <?php wp_reset_query(); ?>
           <?php endif; ?>
+          <?php get_search_form(); ?>
+        </div>
+
+        <div class="small-12 column" id="copyright">
+          <span>copyright &copy;&nbsp;<?php
+            $start_year = 2011;
+            $curr_year = date('Y');
+            echo $start_year . ($start_year == $curr_year ? '' : '-' . $curr_year);
+          ?> allenc.com</span>
         </div>
       </div>
     </div>
