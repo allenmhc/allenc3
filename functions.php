@@ -33,8 +33,56 @@ function allenc_get_bookend_post_date($is_first, $is_article) {
 }
 
 function allenc_archive_box_class($categories) {
-  $cat_count = count($categories);
-  $count_class = ($cat_count >= 1 && $cat_count <= 3) ? $cat_count : "other";
+  $count_class = "0";
+  if (count($categories) > 0) {
+    switch($categories[0]->slug) {
+      case "apps":
+      case "technology":
+      case "computing":
+      case "interface":
+      case "google":
+      case "hardware":
+      case "media":
+      case "mobile":
+      case "quora":
+      case "services":
+      case "social-media":
+      case "square":
+      case "startups":
+        $count_class = "1";
+        break;
+
+      case "engineering":
+      case "front-end":
+      case "css":
+      case "interview":
+      case "javascript":
+      case "management":
+      case "hiring":
+      case "rails":
+      case "typography":
+      case "web-design":
+      case "work":
+      case "wordpress":
+      case "web-design":
+        $count_class = "2";
+        break;
+
+      case "blog":
+      case "reading":
+      case "writing":
+      case "games":
+      case "learning":
+      case "places":
+      case "rants":
+      case "thoughts":
+        $count_class = "3";
+        break;
+
+      default:
+        $count_class = "0";
+    }
+  }
   echo "archive-box-" . $count_class;
 }
 
