@@ -49,8 +49,8 @@ global $wp_query;
   </div>
 
   <div class="row">
-    <div class="archives-list-wrapper column">
-      <ul class="archives-list small-block-grid-2 medium-block-grid-4 large-block-grid-6">
+    <div class="archives-list-wrapper medium-8 medium-offset-4 column">
+      <ul class="archives-list small-block-grid-2 medium-block-grid-3 large-block-grid-4">
         <?php
         rewind_posts();
         $query_args = array(
