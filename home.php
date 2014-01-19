@@ -43,7 +43,7 @@ global $wp_query;
       <aside class="dot">
         <div class="dot-mask"></div>
         <div class="dot-icon icomoon-icon icon-copy"></div>
-        <label>more posts</label>
+        <label>recent posts</label>
       </aside>
     </div>
   </div>
