@@ -9637,6 +9637,16 @@ h2 {
   color: #bdc3c7;
 }
 
+/* line 107, ../scss/section/_footer.scss */
+#copyright {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #f1c40f;
+}
+
 /* line 46, ../scss/page/_home.scss */
 #featured-article .article-label {
   background-color: #1abc9c;

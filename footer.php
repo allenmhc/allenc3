@@ -56,8 +56,10 @@
           <?php endif; ?>
           <?php get_search_form(); ?>
         </div>
+      </div>
 
-        <div class="small-12 column" id="copyright">
+      <div class="row">
+        <div class="small-12 medium-6 medium-offset-6 column" id="copyright">
           <span>copyright &copy;&nbsp;<?php
             $start_year = 2011;
             $curr_year = date('Y');
